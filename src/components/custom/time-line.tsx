@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, memo, useMemo } from 'react';
+import { useState, useRef, memo, useMemo, useEffect } from 'react';
 import {
     motion,
     useScroll,
@@ -11,8 +11,22 @@ import {
 import { Reveal } from './reveal';
 import { Badge } from '../ui/badge';
 import { ArrowRightIcon } from 'lucide-react';
-
 import workExperiences from '@/lib/work-experiences.json';
+
+// Simple hook để detect mobile (<640px)
+function useMediaQuery(query: string) {
+    const [matches, setMatches] = useState(false);
+    useEffect(() => {
+        const media = window.matchMedia(query);
+        if (media.matches !== matches) {
+            setMatches(media.matches);
+        }
+        const listener = () => setMatches(media.matches);
+        media.addEventListener('change', listener);
+        return () => media.removeEventListener('change', listener);
+    }, [matches, query]);
+    return matches;
+}
 
 interface WorkIconProps {
     progress: number;
@@ -67,6 +81,9 @@ export default function Timeline() {
         restDelta: 0.001,
     });
 
+    // Phát hiện nếu màn hình nhỏ (<640px)
+    const isMobile = useMediaQuery('(max-width: 640px)');
+
     return (
         <section
             ref={containerRef}
@@ -94,8 +111,13 @@ export default function Timeline() {
 
                     {/* Work Icon */}
                     <motion.div
-                        className="sticky top-[48%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-primary"
+                        className="sticky"
                         style={{
+                            top: isMobile ? '10%' : '48%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            zIndex: 10,
+                            color: 'var(--primary)',
                             y: useTransform(
                                 scrollYProgress,
                                 [0, 200],
@@ -103,7 +125,7 @@ export default function Timeline() {
                             ),
                         }}
                     >
-                        <WorkIcon
+                        {/* <WorkIcon
                             progress={
                                 useTransform(
                                     scrollYProgress,
@@ -111,7 +133,7 @@ export default function Timeline() {
                                     [0.5, 1],
                                 ) as any
                             }
-                        />
+                        /> */}
                     </motion.div>
 
                     {workExperiences.map((event, index) => (
@@ -125,6 +147,7 @@ export default function Timeline() {
                                     expandedEvent === index ? null : index,
                                 )
                             }
+                            isMobile={isMobile}
                         />
                     ))}
                 </div>
@@ -138,6 +161,7 @@ function TimelineEvent({
     index,
     isExpanded,
     onToggle,
+    isMobile,
 }: {
     event: {
         position: string;
@@ -149,6 +173,7 @@ function TimelineEvent({
     index: number;
     isExpanded: boolean;
     onToggle: () => void;
+    isMobile: boolean;
 }) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.5 });
@@ -156,21 +181,30 @@ function TimelineEvent({
     return (
         <motion.div
             ref={ref}
-            className={`mb-8 flex justify-between items-center w-full ${
-                index % 2 === 0 ? 'flex-row-reverse' : ''
+            className={`mb-8 ${
+                isMobile
+                    ? 'flex flex-col items-center'
+                    : `flex justify-between items-center w-full ${
+                          index % 2 === 0 ? 'flex-row-reverse' : ''
+                      }`
             }`}
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, delay: index * 0.1 }}
         >
-            <div className="w-5/12" />
-            <div className="z-20">
+            {/* Trên desktop: để khoảng trống bên trái cho căn lề xen kẽ, còn mobile thì không cần */}
+            {isMobile ? null : <div className="w-5/12" />}
+            <div className="z-20 mb- isMobile:mb-0">
                 <div className="flex items-center justify-center w-8 h-8 bg-primary rounded-full">
                     <div className="w-3 h-3 bg-background rounded-full" />
                 </div>
             </div>
             <motion.div
-                className="w-5/12 cursor-pointer"
+                className={
+                    isMobile
+                        ? 'w-full mt-4 cursor-pointer z-30'
+                        : 'w-5/12 cursor-pointer'
+                }
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={onToggle}
@@ -194,9 +228,9 @@ function TimelineEvent({
                         <div className="text-sm text-muted-foreground">
                             <ul className="space-y-4">
                                 {event.responsibilities.map(
-                                    (responsibility, index) => (
+                                    (responsibility, idx) => (
                                         <li
-                                            key={index}
+                                            key={idx}
                                             className="flex items-start"
                                         >
                                             <ArrowRightIcon className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
@@ -206,7 +240,6 @@ function TimelineEvent({
                                 )}
                             </ul>
                             <br />
-
                             <div className="flex gap-2 flex-wrap">
                                 {event.skills.map((skill, idx) => (
                                     <Reveal

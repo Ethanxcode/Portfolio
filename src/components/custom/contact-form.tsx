@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useTransition } from 'react';
 import { motion } from 'framer-motion';
 import * as z from 'zod';
 import { Button } from '@/components/ui/button';
@@ -16,6 +16,8 @@ import {
 import { useForm } from 'react-hook-form';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
+import { sendMessageToTelegram } from '@/actions/telegram';
+import { toast } from 'sonner';
 
 const formSchema = z.object({
     name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -31,6 +33,7 @@ const formSchema = z.object({
 
 export default function ContactForm() {
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isPending, startTransition] = useTransition();
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -44,14 +47,35 @@ export default function ContactForm() {
     });
 
     function onSubmit(values: z.infer<typeof formSchema>) {
-        setIsSubmitting(true);
-        // Simulate API call
-        setTimeout(() => {
-            console.log(values);
-            setIsSubmitting(false);
-            form.reset();
-            alert("Thank you for your message. We'll get back to you soon!");
-        }, 2000);
+        const { name, email, phoneNumber, budget, message } = values;
+
+        const formattedMessage = `
+        📩 *New Contact Information* 📩
+        
+        👤 *Name:* ${name || 'N/A'}
+        📧 *Email:* ${email || 'N/A'}
+        📞 *Phone Number:* ${phoneNumber || 'N/A'}
+        💰 *Budget:* ${budget || 'N/A'}
+        📝 *Message:* ${message || 'N/A'}
+        
+        🚀 *Sent from the portfolio!*`;
+
+        startTransition(() => {
+            sendMessageToTelegram(formattedMessage)
+                .then((data) => {
+                    if (data.error) {
+                        toast.error(data.error);
+                        form.reset();
+                        return;
+                    }
+                    toast.success(data.message);
+                    form.reset();
+                })
+                .catch((error) => {
+                    form.reset();
+                    toast.error(error.message);
+                });
+        });
     }
 
     return (

@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { NavigationBar } from '@/components/custom/nav-bar';
 import Link from 'next/link';
 import ClientAnlytic from '@/components/client-analytic';
+import { Toaster } from 'sonner';
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -55,6 +56,7 @@ export default function RootLayout({
                         </Link>
                     </footer>
                 </ThemeProvider>
+                <Toaster />
                 <ClientAnlytic />
             </body>
         </html>

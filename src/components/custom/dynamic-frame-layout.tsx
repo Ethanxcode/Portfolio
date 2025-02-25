@@ -1,9 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useEffect, useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { FrameComponent } from './frame-component';
 import framesData from '@/lib/media.json';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 
 interface Frame {
     id: number;
@@ -22,28 +23,28 @@ export default function DynamicFrameLayout() {
         null,
     );
 
-    // Lấy dữ liệu từ file media.json
+    // Phát hiện mobile (max-width: 640px)
+    const isMobile = useMediaQuery('(max-width: 640px)');
+
     useEffect(() => {
         setFrames(framesData.frames);
     }, []);
 
     // Tính rows và cols dựa trên số frames
     const getGridSize = (numFrames: number) => {
-        // Bạn có thể tùy chỉnh logic này, đây chỉ là ví dụ:
         if (numFrames <= 3) {
-            return { rows: 1, cols: numFrames }; // ví dụ: 2 frames => 1x2
+            return { rows: 1, cols: numFrames };
         } else if (numFrames <= 6) {
-            return { rows: 2, cols: 3 }; // 4-6 frames => 2x3
+            return { rows: 2, cols: 3 };
         } else {
-            return { rows: 3, cols: 3 }; // 7-9 frames => 3x3
+            return { rows: 3, cols: 3 };
         }
     };
 
-    // Default vibes
     const { rows, cols } = getGridSize(frames.length);
     const frameBorderRadius = 0;
 
-    // Hover size logic: row/col nào bị hover sẽ là "2fr", còn lại "1fr"
+    // Hover size logic (desktop)
     const getRowSizes = () => {
         const rowSizes = [];
         for (let r = 0; r < rows; r++) {
@@ -68,17 +69,60 @@ export default function DynamicFrameLayout() {
         return colSizes.join(' ');
     };
 
+    // Nếu mobile => hiển thị dạng horizontal scroller
+    if (isMobile) {
+        return (
+            <section
+                id="collections"
+                className=" flex-col gap-4 py-16 sm:py-32 hidden md:flex"
+            >
+                <div className="text-center mb-12">
+                    <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded">
+                        Where I've traveled
+                    </h2>
+                    <p className="text-lg text-muted-foreground leading-7">
+                        A collection of places I've visited, special moments,
+                        and memories captured in time.
+                    </p>
+                </div>
+
+                {/* Horizontal scroll + drag */}
+                <motion.div
+                    className="flex gap-2 overflow-x-auto px-4"
+                    drag="x"
+                    // Giới hạn kéo (có thể tuỳ chỉnh, hoặc bỏ hẳn để scroll+drag thoải mái)
+                    dragConstraints={{ left: -1000, right: 0 }}
+                    style={{ cursor: 'grab' }}
+                >
+                    {frames.map((frame) => (
+                        <motion.div
+                            key={frame.id}
+                            className="relative shrink-0"
+                            style={{
+                                width: '80vw', // hoặc 'min-w-[80%]' tùy Tailwind
+                                borderRadius: `${frameBorderRadius}px`,
+                                overflow: 'hidden',
+                            }}
+                        >
+                            <FrameComponent
+                                {...framesData.defaultProps}
+                                {...frame}
+                                borderRadius={frameBorderRadius}
+                            />
+                        </motion.div>
+                    ))}
+                </motion.div>
+            </section>
+        );
+    }
+
+    // Ngược lại, desktop layout
     return (
         <section
             id="projects"
             className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16"
         >
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-center mb-12"
-            >
+            <div className="text-center mb-12">
                 <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded">
                     Where I've traveled
                 </h2>
@@ -86,7 +130,7 @@ export default function DynamicFrameLayout() {
                     A collection of places I've visited, special moments, and
                     memories captured in time.
                 </p>
-            </motion.div>
+            </div>
 
             <div className="w-full h-[100dvh] overflow-hidden">
                 <div
@@ -103,7 +147,6 @@ export default function DynamicFrameLayout() {
                     }}
                 >
                     {frames.map((frame, index) => {
-                        // Tính toán row, col dựa trên số cols
                         const row = Math.floor(index / cols);
                         const col = index % cols;
 
