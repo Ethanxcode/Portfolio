@@ -17,7 +17,7 @@ export default function About() {
                     transition: { duration: 0.4 },
                 }}
             >
-                <p className="leading-7">
+                <p className="text-lg text-muted-foreground leading-7">
                     🎓 I am Tran Nguyen Dang Huy located at📍 Ho Chi Minh,
                     Vietnam. I am also Pursuing my Associate's Degree, in
                     <strong>Information Technology</strong> and will graduate in

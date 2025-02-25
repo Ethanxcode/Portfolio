@@ -5,7 +5,7 @@ import { Button } from './ui/button';
 import { useState } from 'react';
 import { Reveal } from './custom/reveal';
 import { Badge } from './ui/badge';
-import workExperiences from '@/lib/workExperiences.json';
+import workExperiences from '@/lib/work-experiences.json';
 
 interface WorkExperience {
     company: string;

@@ -1,6 +1,7 @@
 import projects from '@/lib/projects.json';
 import { Reveal } from './custom/reveal';
 import { ProjectCard3d } from './custom/project-card-3d';
+
 export default function Projects() {
     return (
         <section

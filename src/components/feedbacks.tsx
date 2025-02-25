@@ -29,7 +29,7 @@ export default async function Feedbacks() {
                 <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded">
                     Things People Say
                 </h2>
-                <p className="leading-7">
+                <p className="text-lg text-muted-foreground leading-7">
                     Failed to fetch feedbacks. Reload the page to try again
                 </p>
             </section>
@@ -47,7 +47,9 @@ export default async function Feedbacks() {
                 Things People Say
             </h2>
             {testimonials.length === 0 && (
-                <p className="leading-7">No feedbacks to display</p>
+                <p className="text-lg text-muted-foreground leading-7">
+                    No feedbacks to display
+                </p>
             )}
             {testimonials.length > 0 && (
                 <InfiniteMovingCards

@@ -33,7 +33,7 @@ export default function Hero() {
                     }}
                 >
                     <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 font-mplus-rounded">
-                        Software Engineer
+                        Junior Full-stack Developer
                     </h3>
                 </Reveal>
                 <Reveal

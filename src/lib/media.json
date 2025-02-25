@@ -1,0 +1,68 @@
+{
+    "defaultProps": {
+        "width": "100%",
+        "height": "100%",
+        "borderSize": 100
+    },
+    "frames": [
+        {
+            "id": 1,
+            "images": ["/assets/images/vinh-hao.jpg"],
+            "videos": ["/assets/videos/vinh-hao.mp4"],
+            "className": "frame-1",
+            "label": "Vinh Hao Phan Thiet"
+        },
+        {
+            "id": 2,
+            "images": [
+                "/assets/images/lousine.jpg",
+                "/assets/images/lousine-2.jpg",
+                "/assets/images/lousine-2.jpg",
+                "/assets/images/lousine-3.jpg",
+                "/assets/images/lousine-4.jpg",
+                "/assets/images/lousine-5.jpg",
+                "/assets/images/lousine-6.jpg"
+            ],
+            "className": "frame-2",
+            "label": "Lousine Nha Trang"
+        },
+        {
+            "id": 3,
+            "images": [
+                "/assets/images/nha-trang-church.jpg",
+                "/assets/images/nha-trang-church-2.jpg",
+                "/assets/images/nha-trang-church-3.jpg"
+            ],
+            "className": "frame-3",
+            "label": "Nha Tho Chanh Toa Nha Trang"
+        },
+        {
+            "id": 4,
+            "images": [
+                "/assets/images/amiana-resort.jpg",
+                "/assets/images/amiana-resort-2.jpg",
+                "/assets/images/amiana-resort-3.jpg",
+                "/assets/images/amiana-resort-4.jpg",
+                "/assets/images/amiana-resort-5.jpg",
+                "/assets/images/amiana-resort-6.jpg"
+            ],
+            "className": "frame-4",
+            "label": "Amiana Resort"
+        },
+        {
+            "id": 5,
+            "images": [
+                "/assets/images/skylight.jpg",
+                "/assets/images/skylight-2.jpg"
+            ],
+            "className": "frame-5",
+            "label": "skylight Nha Trang"
+        },
+        {
+            "id": 6,
+            "images": ["/assets/images/tcc.jpg", "/assets/images/me-2.jpg"],
+            "className": "frame-6",
+            "label": "TCC Hospital"
+        }
+    ]
+}

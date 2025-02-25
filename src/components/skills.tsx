@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { Reveal } from './custom/reveal';
-import Spline from '@splinetool/react-spline/next';
 import ChatGpt from './ui/gpt';
 import Copilot from './ui/copilot';
 import MatrixLoader from './custom/matrix-loader';
@@ -460,8 +459,8 @@ export default function Skills() {
                 </div>
             </>
 
-            <div className="flex flex-col sm:flex-row w-full justify-center items-center gap-4 ">
-                <Spline scene={splineUrl} />
+            {/* <div className="flex flex-col sm:flex-row w-full justify-center items-center gap-4 ">
+                <Spline scene={splineUrl} /> 
                 <aside className="bg-black hidden md:block text-white p-6 rounded-lg w-1/2 max-w-lg font-mono">
                     <Reveal
                         initial={{ opacity: 0, y: 50 }}
@@ -489,7 +488,7 @@ export default function Skills() {
                         </div>
                     </Reveal>
                 </aside>
-            </div>
+            </div> */}
         </section>
     );
 }

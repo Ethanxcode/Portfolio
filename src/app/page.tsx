@@ -9,6 +9,10 @@ import Skills from '@/components/skills';
 import { Separator } from '@/components/ui/separator';
 import Card from '../components/custom/matrix-card';
 import MatrixLoader from '@/components/custom/matrix-loader';
+import Timeline from '@/components/custom/time-line';
+import ContactForm from '@/components/custom/contact-form';
+import Marquee from '@/components/custom/marquee';
+import DynamicFrameLayout from '@/components/custom/dynamic-frame-layout';
 
 export default function Home() {
     return (
@@ -17,20 +21,27 @@ export default function Home() {
             <Separator />
             <About />
             <Separator />
-            <Experiences />
+            <DynamicFrameLayout />
             <Separator />
+            <Timeline />
+            <Separator />
+            {/* <Experiences />
+            <Separator /> */}
             <Projects />
             <Separator />
             <Feedbacks />
             <Separator />
             <Skills />
             <Separator />
-            <MatrixLoader />
+            {/* <Contact /> */}
+            <Marquee />
             <Separator />
-            <Contact />
-            <Card mode={0}>
+            <ContactForm />
+            <Separator />
+            <MatrixLoader />
+            {/* <Card mode={0}>
                 <CanvasPlatformer />
-            </Card>
+            </Card> */}
         </div>
     );
 }

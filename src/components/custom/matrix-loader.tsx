@@ -181,7 +181,7 @@ const MatrixLoader: React.FC<MatrixLoaderProps> = ({
     }, [rows, direction, mode]);
 
     return (
-        <div className="w-full h-auto relative">
+        <div className="w-full h-auto relative sm:py-32 py-16">
             <canvas className="block w-full bg-transparent " ref={canvasRef} />
         </div>
         // w-full h-auto absolute
