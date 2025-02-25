@@ -8,8 +8,8 @@ import {
     useSpring,
     useInView,
 } from 'framer-motion';
-import { Reveal } from './reveal';
-import { Badge } from '../ui/badge';
+import { Reveal } from './custom/reveal';
+import { Badge } from './ui/badge';
 import { ArrowRightIcon } from 'lucide-react';
 import workExperiences from '@/lib/work-experiences.json';
 
@@ -86,6 +86,7 @@ export default function Timeline() {
 
     return (
         <section
+            id="experiences"
             ref={containerRef}
             className="py-20 bg-background overflow-hidden"
         >
