@@ -88,7 +88,11 @@ export default function RootLayout({
             <body
                 className={`${mPlusRounded.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
             >
-                <ThemeProvider defaultTheme="dark" disableTransitionOnChange>
+                <ThemeProvider
+                    defaultTheme="dark"
+                    enableSystem
+                    disableTransitionOnChange
+                >
                     <NavigationBar />
                     <main className="container mx-auto">{children}</main>
                     <footer className="container mx-auto py-4">
