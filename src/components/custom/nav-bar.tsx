@@ -23,7 +23,7 @@ export function NavigationBar() {
 
     return (
         <>
-            <NavigationMenu className="hidden sm:flex sm:sticky sm:top-4 min-w-[40%] rounded-[4rem] bg-black dark:bg-opacity-20 bg-opacity-10 backdrop-blur-lg container py-4 justify-center border-b border-border/40 dark:shadow-2xl dark:shadow-blue-500/[0.1] gap-4">
+            <NavigationMenu className="hidden sm:flex sm:sticky sm:top-4 min-w-[40%] rounded-[4rem] bg-black dark:bg-opacity-20 bg-opacity-10 backdrop-blur-lg container py-4 justify-center border-b border-border/40 dark:shadow-2xl dark:shadow-blue-500/[0.1] gap-4 z-50">
                 {/* className="hidden sm:flex sm:sticky sm:top-0 min-w-full bg-black bg-opacity-20 backdrop-blur-lg container py-4 justify-between border-b border-border/40" */}
                 <Avatar
                     className="cursor-pointer"
