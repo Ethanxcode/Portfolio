@@ -229,9 +229,9 @@ function TimelineEvent({
                         <div className="text-sm text-muted-foreground">
                             <ul className="space-y-4">
                                 {event.responsibilities.map(
-                                    (responsibility, idx) => (
+                                    (responsibility, index) => (
                                         <li
-                                            key={idx}
+                                            key={index}
                                             className="flex items-start"
                                         >
                                             <ArrowRightIcon className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
@@ -242,7 +242,7 @@ function TimelineEvent({
                             </ul>
                             <br />
                             <div className="flex gap-2 flex-wrap">
-                                {event.skills.map((skill, idx) => (
+                                {event.skills.map((skill) => (
                                     <Reveal
                                         key={skill}
                                         initial={{ opacity: 0, y: 30 }}

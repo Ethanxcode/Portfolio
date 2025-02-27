@@ -15,7 +15,6 @@ interface Props {
 export const Reveal = ({ children, initial, whileInView }: Props) => {
     return (
         <motion.div initial={initial} whileInView={whileInView}>
-            {' '}
             {children}
         </motion.div>
     );

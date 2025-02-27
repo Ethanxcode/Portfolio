@@ -74,8 +74,16 @@ export function ProjectCard3d({
                 <div className="flex justify-between items-center mt-10">
                     {githubUrl && (
                         <CardItem translateZ={30}>
-                            <Link href={githubUrl} target="_blank" passHref>
-                                <Button variant="link">
+                            <Link
+                                href={githubUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                passHref
+                            >
+                                <Button
+                                    variant="link"
+                                    aria-label={`View ${title} source code on GitHub`}
+                                >
                                     Link To Github
                                     <ExternalLink className="ml-2" />
                                 </Button>
@@ -84,8 +92,15 @@ export function ProjectCard3d({
                     )}
                     {demoUrl && (
                         <CardItem translateZ={30}>
-                            <Link href={demoUrl} target="_blank" passHref>
-                                <Button>
+                            <Link
+                                href={demoUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                passHref
+                            >
+                                <Button
+                                    aria-label={`View live demo of ${title}`}
+                                >
                                     Live URL
                                     <ExternalLink className="ml-2" />
                                 </Button>

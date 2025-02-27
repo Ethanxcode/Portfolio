@@ -10,7 +10,6 @@ export default async function Feedbacks() {
 
     try {
         const data = await fetchFeedbacks();
-        console.log(data);
         if (data) {
             for (const item of data) {
                 testimonials.push({

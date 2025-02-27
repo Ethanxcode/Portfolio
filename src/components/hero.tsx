@@ -62,6 +62,7 @@ export default function Hero() {
                                     <Link
                                         href="https://www.linkedin.com/in/trannguyendanghuy/"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         <Button
                                             variant="secondary"
@@ -90,6 +91,7 @@ export default function Hero() {
                                     <Link
                                         href="https://github.com/Ethanxcode"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         <Button
                                             variant="secondary"
@@ -118,6 +120,7 @@ export default function Hero() {
                                     <Link
                                         href="mailto:danhuy.work@gmail.com"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         <Button
                                             variant="secondary"
@@ -147,6 +150,7 @@ export default function Hero() {
                                         download
                                         href="/Resume-Huy-Tran-Nguyen-Dang.pdf"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         <Button
                                             variant="secondary"

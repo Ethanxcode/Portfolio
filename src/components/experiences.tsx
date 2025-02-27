@@ -42,6 +42,7 @@ export default function Experiences() {
                                         : ''
                                 }`}
                                 onClick={() => setSelectedCompany(exp)}
+                                aria-label={`Show work experience at ${exp.company}`}
                             >
                                 <span className="truncate" title={exp.company}>
                                     {exp.company}
