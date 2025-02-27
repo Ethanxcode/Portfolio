@@ -41,9 +41,9 @@ export const metadata: Metadata = {
         canonical: 'https://ethantran.is-a.dev',
     },
     openGraph: {
-        title: 'Ethan Tran - Portfolio',
+        title: 'Ethan Tran | Full-Stack Developer',
         description:
-            'I explore, play, build, test and deploy software. Discover my projects, designs, and development journey.',
+            'I explore, play, build, test and deploy software. Discover my projects, and development journey.',
         url: 'https://ethantran.is-a.dev',
         siteName: 'Ethan Tran',
         images: [
@@ -63,7 +63,8 @@ export const metadata: Metadata = {
         description:
             'I plan, design, build, test and deploy software. Check out my projects and creative process!',
         creator: '@Ethancodes_', // Nếu có account Twitter
-        images: ['https://ethantran.is-a.dev/twitter-og-image.jpg'],
+        // images: ['https://ethantran.is-a.dev/twitter-og-image.jpg'],
+        images: ['https://ethantran.is-a.dev/og-image.jpg'],
     },
     icons: {
         icon: '/favicon.ico',
