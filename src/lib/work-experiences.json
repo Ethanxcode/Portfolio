@@ -1,11 +1,12 @@
 [
     {
-        "position": "Frontend Developer (Freelancer)",
+        "position": "Front-end Developer (Part-time)",
         "company": "FPT Polytechnic College",
         "duration": "Aug 2023 - Feb 2024",
         "responsibilities": [
-            "Collaborated with other engineers to design, build, and develop projects for clients of FPT Polytechnic College.",
-            "Developed a web application to manage students and activities in a workshop setting, successfully managing ~10,000 registered students and more than 477 projects."
+            "Led front-end development using React, Next.js, and Redux, optimized the performance for 239 projects in the system, helping to handle a large amount of user traffic with smooth experience.",
+            "Collaborated with cross-functional teams to ensure timely delivery and high-quality results.",
+            "Involved in 153 ongoing projects, providing consistent support for front-end development, optimizing performance, and collaborating with cross-functional teams to ensure timely delivery and high-quality results."
         ],
         "skills": [
             "REST APIs",
@@ -22,27 +23,20 @@
             "Zod",
             "React Query",
             "Socket.io",
-            "CSS Framework",
-            "Cloudinary",
-            "Clerk",
-            "Strapi",
-            "Framer-motion",
-            "Stripe",
             "Firebase"
         ]
     },
     {
-        "position": "Full-stack Developer (Freelancer)",
+        "position": "Full-stack Developer (Full-time)",
         "company": "Bytez Team",
         "duration": "August 2024 - Dec 2024",
         "responsibilities": [
-            "Designed and developed a software, collaborated with other engineers on existing internal systems to implement feature enhancements and modifications."
+            "Contributed to Bytez Pro and Cloudify projects, optimizing the website's performance and user interface. Led the development of API integrations, improving overall team performance and enhancing user experience."
         ],
         "skills": [
             "REST APIs",
             "TypeScript",
             "Nextjs",
-            "Laravel Lumen",
             "MySQL",
             "PostgreSQL",
             "Ruby on Rails",
@@ -50,26 +44,46 @@
             "Figma",
             "Ant design",
             "Postman API",
-            "Design Patterns"
+            "Design Patterns",
+            "Strapi",
+            "MongoDb",
+            "Supabase",
+            "PrismaDb",
+            "Firebase",
+            "Cloudinary"
         ]
     },
     {
-        "position": "Backend Developer",
+        "position": "Back-end Developer (Full-time)",
         "company": "TIEN PHONG CDS JOINT STOCK COMPANY",
         "duration": "December 2023 - Present",
         "responsibilities": [
-            "I have experience in maintaining and improving performance to meet client requirements.",
-            "Collaborated with other engineers to design reliable and scalable API solutions and ensured high availability and responsiveness through testing and troubleshooting."
+            "Career Progression: Started as an Intern Back-end Developer, progressing to Full Stack Developer in the R&D team. Took on more responsibilities in system optimization and product development.",
+            "Project Contributions: Contributed to various outsourcing and internal product projects, improving system functionality and performance. Key projects include:",
+            "Vietnam Food Map: Led backend development and API optimization, collaborating with the team to build the backend system. Integrated AI through AWS, and implemented GraphQL and RESTful APIs for seamless data handling and improved performance.",
+            "Trung Nguyen International – King Coffee & Appnoithat & FlyFood: Collaborated with the team to optimize APIs, fix bugs, and add new APIs for better system performance.",
+            "Developed the Vincss Single Sign-On module for enhanced user security.",
+            "Key Responsibilities: System Optimization: Refactored and optimized legacy systems to improve performance, stability, SEO, and user experience.",
+            "Product Development: Contributed to backend architecture and development of new product features, ensuring seamless integration with other systems."
         ],
         "skills": [
             "Full Stack Development",
             "PHP",
+            "Nextjs",
+            "Aws",
             "REST APIs",
             "GraphQL",
-            "Laravel Lumen",
+            "Laravel",
+            "Docker",
+            "Redis",
+            "Kafka",
+            "Vercel",
+            "Webhook",
+            "Git",
+            "Lumen mirco framework",
             "MySQL",
             "PostgreSQL",
-            "Ruby on Rails",
+            "Ruby on Rail",
             "Packaging Design",
             "Figma",
             "Ant design",

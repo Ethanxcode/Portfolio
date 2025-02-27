@@ -19,7 +19,7 @@ export default function About() {
             >
                 <p className="text-lg text-muted-foreground leading-7">
                     🎓 I am Tran Nguyen Dang Huy located at📍 Ho Chi Minh,
-                    Vietnam. I am also Pursuing my Associate's Degree, in
+                    Vietnam. I am also Pursuing my Associate's Degree, in{' '}
                     <strong>Information Technology</strong> and will graduate in
                     mid-2024. I'm passionate about coding, reading, and creating
                     valuable digital products.

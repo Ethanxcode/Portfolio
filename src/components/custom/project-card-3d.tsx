@@ -55,7 +55,7 @@ export function ProjectCard3d({
                 <CardItem
                     as="p"
                     translateZ="50"
-                    className="leading-7 [&:not(:first-child)]:mt-6"
+                    className="leading-7 [&:not(:first-child)]:mt-6 text-muted-foreground"
                 >
                     {description}
                 </CardItem>

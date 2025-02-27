@@ -32,7 +32,7 @@ export default function Hero() {
                         transition: { duration: 0.4 },
                     }}
                 >
-                    <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 font-mplus-rounded">
+                    <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight bg-clip-text text-transparent bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 bg-opacity-50 font-mplus-rounded from-neutral-900 to-neutral-700">
                         Junior Full-stack Developer
                     </h3>
                 </Reveal>
@@ -109,7 +109,7 @@ export default function Hero() {
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <Link
-                                        href="mailto:trannguyendanhuy2904@gmail.com"
+                                        href="mailto:danhuy.work@gmail.com"
                                         target="_blank"
                                     >
                                         <Button variant="secondary" size="icon">
@@ -133,7 +133,8 @@ export default function Hero() {
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <Link
-                                        href="https://read.cv/trannguyendanhuy"
+                                        download
+                                        href="/assets/Resume (ft) - Huy Tran Nguyen Dang.pdf"
                                         target="_blank"
                                     >
                                         <Button variant="secondary" size="icon">
@@ -142,7 +143,7 @@ export default function Hero() {
                                     </Link>
                                 </TooltipTrigger>
                                 <TooltipContent>
-                                    <p>Read.cv</p>
+                                    <p>Resume</p>
                                 </TooltipContent>
                             </Tooltip>
                         </Reveal>

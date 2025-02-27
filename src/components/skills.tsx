@@ -2,13 +2,8 @@ import Image from 'next/image';
 import { Reveal } from './custom/reveal';
 import ChatGpt from './ui/gpt';
 import Copilot from './ui/copilot';
-import MatrixLoader from './custom/matrix-loader';
-import Card from './custom/matrix-card';
-import CanvasPlatformer from './custom/canvas-platformer';
 
 export default function Skills() {
-    const splineUrl = process.env.NEXT_PUBLIC_SPLINE_URL || '';
-
     return (
         <section
             id="skills"
@@ -17,7 +12,7 @@ export default function Skills() {
             <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded">
                 Skills & Tools
             </h2>
-            <p className="leading-7 text-center">
+            <p className="leading-7 text-center text-muted-foreground">
                 My primary focus lies in frontend development and backend
                 development. Full-stack is the way to go xD.
             </p>

@@ -20,7 +20,7 @@
     },
     {
         "title": "Gloria",
-        "description": "A web application providing a digital menu system that helps manage menus easily. Led the frontend team in designing and developing the user interface using React and Tailwind CSS. Collaborated closely with the backend team to ensure seamless integration and optimize performance. The project also involved implementing features for menu customization, real-time updates, and user management.",
+        "description": "A web application providing a digital menu system that helps manage menus easily. Led the frontend team in designing and developing the user interface using React and Tailwind CSS. Collaborated closely with the backend team to ensure seamless integration and optimize performance. The project also involved implementing features for menu customization, real-time updates, and user management. Developed and maintained front-end using Next.js and TailwindCSS, optimized user experience leading to a 40% reduction in load time.\nImplemented real-time notifications using Socket.io, enhancing user engagement by 20%.",
         "imageUrl": "/assets/images/Gloria.png",
         "githubUrl": "",
         "demoUrl": "https://gloria-alpha.vercel.app/",
@@ -34,7 +34,9 @@
             "MongoDB",
             "I18n",
             "Axios",
-            "DaisyUI"
+            "DaisyUI",
+            "Cloudinary",
+            "Stripe"
         ]
     },
     {
@@ -64,12 +66,28 @@
         ]
     },
     {
-        "title": "customer-facing website.",
-        "description": "A web application designed to help users sell their products, manage revenue, process orders, and track the progress of their goals. This was a collaborative project with 3 other students.",
-        "type": "College Project",
-        "imageUrl": "/assets/images/Objetivo.png",
-        "githubUrl": "https://github.com/Ethanxcode/E-commere-Project1-Polyhcm",
-        "demoUrl": "",
-        "skills": ["PHP", "JavaScript", "CSS", "Bootstrap"]
+        "title": "Perry Toc Chien – A Seamless Dual Booking Platform",
+        "description": "Achieved a Real Experience Score (RES) of 95 on Google PageSpeed Insights, ensuring fast load times and seamless interactions for optimal user experience.\nOptimized page performance with a First Contentful Paint (FCP) of 2.18s, Largest Contentful Paint (LCP) of 2.43s, and Cumulative Layout Shift (CLS) of 0.04, providing a smooth and stable loading experience.\nImplemented SEO best practices, enhancing site visibility by optimizing key pages for fast indexing and improving search engine rankings.",
+        "type": "Freelance Project",
+        "imageUrl": "/assets/images/www.perrytocchien.vn_.png",
+        "demoUrl": "https://www.perrytocchien.vn/",
+        "skills": [
+            "PrismaDb",
+            "Nextjs",
+            "TypeScript",
+            "Tailwind CSS",
+            "React Query",
+            "Zod",
+            "Axios",
+            "MongoDB",
+            "I18n",
+            "React Hook Form",
+            "Cloudinary",
+            "Sepay",
+            "Shadcn UI",
+            "Lucide",
+            "SEO",
+            "Server actions"
+        ]
     }
 ]
