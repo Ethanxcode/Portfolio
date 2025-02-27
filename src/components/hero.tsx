@@ -145,7 +145,7 @@ export default function Hero() {
                                 <TooltipTrigger asChild>
                                     <Link
                                         download
-                                        href="/resume-Huy-Tran-Nguyen-Dang.pdf"
+                                        href="/Resume-Huy-Tran-Nguyen-Dang.pdf"
                                         target="_blank"
                                     >
                                         <Button
