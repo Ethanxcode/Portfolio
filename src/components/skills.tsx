@@ -61,7 +61,7 @@ export default function Skills() {
                                     </p>
                                 </div>
                                 {/* Java */}
-                                <div className="flex flex-col items-center justify-center">
+                                {/* <div className="flex flex-col items-center justify-center">
                                     <Image
                                         src="/assets/icons/Java.svg"
                                         alt="Java logo"
@@ -73,7 +73,23 @@ export default function Skills() {
                                     <p className="text-sm text-muted-foreground">
                                         Java
                                     </p>
+                                </div> */}
+
+                                {/* Go */}
+                                <div className="flex flex-col items-center justify-center">
+                                    <Image
+                                        src="/assets/icons/Golang.svg"
+                                        alt="Go logo"
+                                        width={100}
+                                        height={100}
+                                        priority
+                                        className="hover:animate-spin"
+                                    />
+                                    <p className="text-sm text-muted-foreground">
+                                        Go
+                                    </p>
                                 </div>
+
                                 {/* Python */}
                                 <div className="flex flex-col items-center justify-center">
                                     <Image
@@ -191,7 +207,7 @@ export default function Skills() {
                                 </div>
 
                                 {/* Angular */}
-                                <div className="flex flex-col items-center justify-center">
+                                {/* <div className="flex flex-col items-center justify-center">
                                     <Image
                                         src="/assets/icons/Angular.svg"
                                         alt="Angular logo"
@@ -203,7 +219,7 @@ export default function Skills() {
                                     <p className="text-sm text-muted-foreground">
                                         Angular
                                     </p>
-                                </div>
+                                </div> */}
 
                                 {/* VueJs */}
                                 <div className="flex flex-col items-center justify-center">
@@ -216,7 +232,7 @@ export default function Skills() {
                                         className="hover:animate-spin"
                                     />
                                     <p className="text-sm text-muted-foreground">
-                                        Angular
+                                        Vuejs
                                     </p>
                                 </div>
                             </div>
@@ -236,6 +252,34 @@ export default function Skills() {
                                 Backend
                             </h3>
                             <div className="flex flex-row flex-wrap justify-center gap-4">
+                                {/* Laravel */}
+                                <div className="flex flex-col items-center justify-center">
+                                    <Image
+                                        src="/assets/icons/Laravel.svg"
+                                        alt="Laravel logo"
+                                        width={100}
+                                        height={100}
+                                        priority
+                                        className="hover:animate-spin"
+                                    />
+                                    <p className="text-sm text-muted-foreground">
+                                        Laravel
+                                    </p>
+                                </div>
+                                {/* Lumen */}
+                                <div className="flex flex-col items-center justify-center">
+                                    <Image
+                                        src="/assets/icons/Lumen.svg"
+                                        alt="Lumen logo"
+                                        width={100}
+                                        height={100}
+                                        priority
+                                        className="hover:animate-spin"
+                                    />
+                                    <p className="text-sm text-muted-foreground">
+                                        Lumen
+                                    </p>
+                                </div>
                                 {/* NestJS */}
                                 <div className="flex flex-col items-center justify-center">
                                     <Image
@@ -277,7 +321,7 @@ export default function Skills() {
                                 </div> */}
 
                                 {/* Django */}
-                                <div className="flex flex-col items-center justify-center">
+                                {/* <div className="flex flex-col items-center justify-center">
                                     <Image
                                         src="/assets/icons/Django.svg"
                                         alt="Django logo"
@@ -289,7 +333,7 @@ export default function Skills() {
                                     <p className="text-sm text-muted-foreground">
                                         Django
                                     </p>
-                                </div>
+                                </div> */}
 
                                 {/* Node */}
                                 <div className="flex flex-col items-center justify-center">
@@ -368,7 +412,7 @@ export default function Skills() {
                                 </div>
 
                                 {/* Google Cloud */}
-                                <div className="flex flex-col items-center justify-center">
+                                {/* <div className="flex flex-col items-center justify-center">
                                     <Image
                                         src="/assets/icons/GoogleCloud.svg"
                                         alt="Google Cloud logo"
@@ -380,7 +424,7 @@ export default function Skills() {
                                     <p className="text-sm text-muted-foreground">
                                         Google Cloud
                                     </p>
-                                </div>
+                                </div> */}
 
                                 {/* MongoDB */}
                                 <div className="flex flex-col items-center justify-center">
