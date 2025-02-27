@@ -7,7 +7,6 @@ import Hero from '@/components/hero';
 import Projects from '@/components/projects';
 import Skills from '@/components/skills';
 import { Separator } from '@/components/ui/separator';
-import Card from '../components/custom/matrix-card';
 import MatrixLoader from '@/components/custom/matrix-loader';
 import Timeline from '@/components/time-line';
 import ContactForm from '@/components/custom/contact-form';

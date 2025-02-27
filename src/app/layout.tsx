@@ -24,8 +24,53 @@ const mPlusRounded = M_PLUS_Rounded_1c({
 });
 
 export const metadata: Metadata = {
-    title: 'Ethan Tran',
-    description: 'I plan, design, build, test and deploy software',
+    title: 'Ethan Tran | Full-Stack Developer',
+    description:
+        'I explore, play, build, test and deploy software. Check out my creative portfolio to see my projects and design process.',
+    keywords: [
+        'Full-stack developer',
+        'portfolio',
+        'UI/UX design',
+        'software engineering',
+        'Ethan Tran',
+    ],
+    robots: {
+        index: true,
+        follow: true,
+    },
+    alternates: {
+        canonical: 'https://ethantran.com',
+    },
+    openGraph: {
+        title: 'Ethan Tran - Portfolio',
+        description:
+            'I explore, play, build, test and deploy software. Discover my projects, designs, and development journey.',
+        url: 'https://ethantran.com',
+        siteName: 'Ethan Tran',
+        images: [
+            {
+                url: 'https://ethantran.com/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'Ethan Tran Portfolio',
+            },
+        ],
+        locale: 'en_US',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Ethan Tran - Portfolio',
+        description:
+            'I plan, design, build, test and deploy software. Check out my projects and creative process!',
+        creator: '@Ethancodes_', // Nếu có account Twitter
+        images: ['https://ethantran.com/twitter-og-image.jpg'],
+    },
+    icons: {
+        icon: '/favicon.ico',
+        shortcut: '/favicon-16x16.png',
+        apple: '/apple-touch-icon.png',
+    },
 };
 
 export default function RootLayout({

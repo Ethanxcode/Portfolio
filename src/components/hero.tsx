@@ -152,7 +152,7 @@ export default function Hero() {
             </div>
             <div className="flex relative w-full h-full">
                 <Image
-                    src={'/assets/images/me.jpg'}
+                    src={'/assets/images/me-3.jpg'}
                     alt="Me"
                     fill
                     style={{ objectFit: 'contain' }}
