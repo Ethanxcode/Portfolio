@@ -30,7 +30,6 @@ export const metadata: Metadata = {
     keywords: [
         'Full-stack developer',
         'portfolio',
-        'UI/UX design',
         'software engineering',
         'Ethan Tran',
     ],
@@ -39,17 +38,17 @@ export const metadata: Metadata = {
         follow: true,
     },
     alternates: {
-        canonical: 'https://ethantran.com',
+        canonical: 'https://ethantran.is-a.dev',
     },
     openGraph: {
         title: 'Ethan Tran - Portfolio',
         description:
             'I explore, play, build, test and deploy software. Discover my projects, designs, and development journey.',
-        url: 'https://ethantran.com',
+        url: 'https://ethantran.is-a.dev',
         siteName: 'Ethan Tran',
         images: [
             {
-                url: 'https://ethantran.com/og-image.jpg',
+                url: 'https://ethantran.is-a.dev/og-image.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Ethan Tran Portfolio',
@@ -64,7 +63,7 @@ export const metadata: Metadata = {
         description:
             'I plan, design, build, test and deploy software. Check out my projects and creative process!',
         creator: '@Ethancodes_', // Nếu có account Twitter
-        images: ['https://ethantran.com/twitter-og-image.jpg'],
+        images: ['https://ethantran.is-a.dev/twitter-og-image.jpg'],
     },
     icons: {
         icon: '/favicon.ico',
@@ -80,6 +79,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
+            <head>
+                <meta
+                    name="google-site-verification"
+                    content="oq97PEb7NGCa4Ys8zcd4Wesa87Y-EeXdkdvyz-5UlVA"
+                />
+            </head>
             <body
                 className={`${mPlusRounded.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
             >
