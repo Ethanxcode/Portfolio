@@ -1,5 +1,5 @@
 import { InfiniteMovingCards } from './ui/infinte-moving-cards';
-import { fetchFeedbacks } from '@/app/utils/supabase/server';
+import { fetchFeedbacks } from '@/utils/supabase/server';
 
 export default async function Feedbacks() {
     const testimonials: {

@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         siteName: 'Ethan Tran',
         images: [
             {
-                url: 'https://ethantran.is-a.dev/og-image.jpg',
+                url: 'https://ethantran.is-a.dev/api/static',
                 width: 1200,
                 height: 630,
                 alt: 'Ethan Tran Portfolio',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
             'I plan, design, build, test and deploy software. Check out my projects and creative process!',
         creator: '@Ethancodes_', // Nếu có account Twitter
         // images: ['https://ethantran.is-a.dev/twitter-og-image.jpg'],
-        images: ['https://ethantran.is-a.dev/og-image.jpg'],
+        images: ['https://ethantran.is-a.dev/api/static'],
     },
     icons: {
         icon: '/favicon.ico',

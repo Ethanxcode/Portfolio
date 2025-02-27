@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as Utilities from '@/app/utils/utilities';
+import * as Utilities from '@/utils/utilities';
 
 interface ActionButtonProps {
     onClick?: () => void;
