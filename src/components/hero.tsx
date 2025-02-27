@@ -12,7 +12,6 @@ import { Reveal } from './custom/reveal';
 import { TypewriterEffectSmooth } from './ui/typewriter-effect';
 
 import { Readcv } from '@/components/ui/readcv';
-import MatrixLoader from './custom/matrix-loader';
 
 export default function Hero() {
     const name = [{ text: 'Ethan' }, { text: 'Tran' }];
@@ -45,7 +44,7 @@ export default function Hero() {
                     }}
                 >
                     <p className="leading-7 font-mplus-rounded">
-                        I Love'd to develop, build, test and deploy software.
+                        I Love'd to explore, build, test and deploy software.
                     </p>
                 </Reveal>
                 <div className="flex gap-4">
@@ -64,7 +63,11 @@ export default function Hero() {
                                         href="https://www.linkedin.com/in/trannguyendanghuy/"
                                         target="_blank"
                                     >
-                                        <Button variant="secondary" size="icon">
+                                        <Button
+                                            variant="secondary"
+                                            size="icon"
+                                            aria-label="LinkedIn"
+                                        >
                                             <Linkedin />
                                         </Button>
                                     </Link>
@@ -88,7 +91,11 @@ export default function Hero() {
                                         href="https://github.com/Ethanxcode"
                                         target="_blank"
                                     >
-                                        <Button variant="secondary" size="icon">
+                                        <Button
+                                            variant="secondary"
+                                            size="icon"
+                                            aria-label="Github"
+                                        >
                                             <Github />
                                         </Button>
                                     </Link>
@@ -112,7 +119,11 @@ export default function Hero() {
                                         href="mailto:danhuy.work@gmail.com"
                                         target="_blank"
                                     >
-                                        <Button variant="secondary" size="icon">
+                                        <Button
+                                            variant="secondary"
+                                            size="icon"
+                                            aria-label="Email"
+                                        >
                                             <AtSign />
                                         </Button>
                                     </Link>
@@ -134,10 +145,14 @@ export default function Hero() {
                                 <TooltipTrigger asChild>
                                     <Link
                                         download
-                                        href="/assets/Resume (ft) - Huy Tran Nguyen Dang.pdf"
+                                        href="/assets/Resume-Huy-Tran-Nguyen-Dang.pdf"
                                         target="_blank"
                                     >
-                                        <Button variant="secondary" size="icon">
+                                        <Button
+                                            variant="secondary"
+                                            size="icon"
+                                            aria-label="Download Resume"
+                                        >
                                             <Readcv />
                                         </Button>
                                     </Link>
@@ -155,6 +170,7 @@ export default function Hero() {
                     src={'/assets/images/me-3.jpg'}
                     alt="Me"
                     fill
+                    priority
                     style={{ objectFit: 'contain' }}
                     className="rounded-md object-cover"
                 />
