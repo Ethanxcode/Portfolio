@@ -167,13 +167,23 @@ export default function Skills() {
 
                                 {/* NextJS */}
                                 <div className="flex flex-col items-center justify-center">
+                                    {/* SVG dành cho light mode */}
                                     <Image
-                                        src="/assets/icons/NextJs.svg"
-                                        alt="Javascrip logo"
+                                        src="/assets/icons/NextJs-light.svg"
+                                        alt="NextJs logo light"
                                         width={100}
                                         height={100}
                                         priority
-                                        className="hover:animate-spin"
+                                        className="block dark:block hover:animate-spin"
+                                    />
+                                    {/* SVG dành cho dark mode */}
+                                    <Image
+                                        src="/assets/icons/NextJs-black.svg"
+                                        alt="NextJs logo dark"
+                                        width={100}
+                                        height={100}
+                                        priority
+                                        className="hidden dark:hidden hover:animate-spin"
                                     />
                                     <p className="text-sm text-muted-foreground">
                                         NextJS
