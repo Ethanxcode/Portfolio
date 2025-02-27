@@ -1,11 +1,12 @@
-// app/sitemap.ts
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
             url: 'https://ethantran.is-a.dev',
-            lastModified: new Date().toISOString(),
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 1,
         },
     ];
 }
