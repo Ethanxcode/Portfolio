@@ -2,6 +2,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Button } from '../ui/button';
+import { Label } from '../ui/label';
 
 interface FrameComponentProps {
     images: string[]; // mảng ảnh
@@ -110,6 +111,7 @@ export function FrameComponent({
                         fill // Thay cho layout="fill" trong Next.js 13
                         style={{ objectFit: 'cover' }}
                         loading="lazy" // Lazy load
+                        placeholder="blur"
                         quality={75} // Giảm chất lượng chút để giảm size
                     />
                 )}
@@ -117,7 +119,7 @@ export function FrameComponent({
             {isHovered && mediaList.length > 1 && (
                 <>
                     <div className="absolute bottom-0 left-0 right-0 p-2 bg-black bg-opacity-50 z-10">
-                        <div className="text-white font-bold">{label}</div>
+                        <Label className="text-white font-bold">{label}</Label>
                     </div>
                     <Button
                         onClick={prevMedia}
