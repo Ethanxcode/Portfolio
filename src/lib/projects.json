@@ -3,7 +3,7 @@
         "title": "FPT Polytechnic hands-on workshop",
         "description": "A web application to manage students and activities in a workshop setting. Successfully managed ~10,000 registered students and more than 477 projects.",
         "type": "Associated with FPT Polytechnic College Project",
-        "imageUrl": "/assets/images/Xuongthuchanh.jpg",
+        "imageUrl": "/assets/images/Xuongthuchanh.webp",
         "githubUrl": "",
         "demoUrl": "https://xuongthuchanh.poly.edu.vn/",
         "skills": [
@@ -21,7 +21,7 @@
     {
         "title": "Gloria",
         "description": "A web application providing a digital menu system that helps manage menus easily. Led the frontend team in designing and developing the user interface using React and Tailwind CSS. Collaborated closely with the backend team to ensure seamless integration and optimize performance. The project also involved implementing features for menu customization, real-time updates, and user management. Developed and maintained front-end using Next.js and TailwindCSS, optimized user experience leading to a 40% reduction in load time.\nImplemented real-time notifications using Socket.io, enhancing user engagement by 20%.",
-        "imageUrl": "/assets/images/Gloria.png",
+        "imageUrl": "/assets/images/Gloria.webp",
         "githubUrl": "",
         "demoUrl": "https://gloria-alpha.vercel.app/",
         "skills": [
@@ -43,7 +43,7 @@
         "title": "Block Sign",
         "description": "A web application to help users to manage their contract, information. A collaboration project with 5 other students for Component-based Software Engineering course. The project is built using Nestjs for the backend and NextJS for the frontend.",
         "type": "Bachelor's Degree Final Year Project",
-        "imageUrl": "/assets/images/BlockSign.png",
+        "imageUrl": "/assets/images/BlockSign.webp",
         "githubUrl": "https://github.com/Ethanxcode/Block-Sign",
         "demoUrl": "https://block-sign.vercel.app/vi",
         "skills": [
@@ -69,7 +69,7 @@
         "title": "Perry Toc Chien – A Seamless Dual Booking Platform",
         "description": "Achieved a Real Experience Score (RES) of 95 on Google PageSpeed Insights, ensuring fast load times and seamless interactions for optimal user experience.\nOptimized page performance with a First Contentful Paint (FCP) of 2.18s, Largest Contentful Paint (LCP) of 2.43s, and Cumulative Layout Shift (CLS) of 0.04, providing a smooth and stable loading experience.\nImplemented SEO best practices, enhancing site visibility by optimizing key pages for fast indexing and improving search engine rankings.",
         "type": "Freelance Project",
-        "imageUrl": "/assets/images/www.perrytocchien.vn_.png",
+        "imageUrl": "/assets/images/www.perrytocchien.vn_.webp",
         "demoUrl": "https://www.perrytocchien.vn/",
         "skills": [
             "PrismaDb",

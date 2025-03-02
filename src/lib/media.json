@@ -7,7 +7,7 @@
     "frames": [
         {
             "id": 1,
-            "images": ["/assets/images/vinh-hao.jpg"],
+            "images": ["/assets/images/vinh-hao.webp"],
             "videos": ["/assets/videos/vinh-hao.mp4"],
             "className": "frame-1",
             "label": "Vinh Hao Phan Thiet"
@@ -15,13 +15,13 @@
         {
             "id": 2,
             "images": [
-                "/assets/images/lousine.jpg",
-                "/assets/images/lousine-2.jpg",
-                "/assets/images/lousine-2.jpg",
-                "/assets/images/lousine-3.jpg",
-                "/assets/images/lousine-4.jpg",
-                "/assets/images/lousine-5.jpg",
-                "/assets/images/lousine-6.jpg"
+                "/assets/images/lousine.webp",
+                "/assets/images/lousine-2.webp",
+                "/assets/images/lousine-2.webp",
+                "/assets/images/lousine-3.webp",
+                "/assets/images/lousine-4.webp",
+                "/assets/images/lousine-5.webp",
+                "/assets/images/lousine-6.webp"
             ],
             "className": "frame-2",
             "label": "Lousine Nha Trang"
@@ -29,9 +29,9 @@
         {
             "id": 3,
             "images": [
-                "/assets/images/nha-trang-church.jpg",
-                "/assets/images/nha-trang-church-2.jpg",
-                "/assets/images/nha-trang-church-3.jpg"
+                "/assets/images/nha-trang-church.webp",
+                "/assets/images/nha-trang-church-2.webp",
+                "/assets/images/nha-trang-church-3.webp"
             ],
             "className": "frame-3",
             "label": "Nha Tho Chanh Toa Nha Trang"
@@ -39,12 +39,12 @@
         {
             "id": 4,
             "images": [
-                "/assets/images/amiana-resort.jpg",
-                "/assets/images/amiana-resort-2.jpg",
-                "/assets/images/amiana-resort-3.jpg",
-                "/assets/images/amiana-resort-4.jpg",
-                "/assets/images/amiana-resort-5.jpg",
-                "/assets/images/amiana-resort-6.jpg"
+                "/assets/images/amiana-resort.webp",
+                "/assets/images/amiana-resort-2.webp",
+                "/assets/images/amiana-resort-3.webp",
+                "/assets/images/amiana-resort-4.webp",
+                "/assets/images/amiana-resort-5.webp",
+                "/assets/images/amiana-resort-6.webp"
             ],
             "className": "frame-4",
             "label": "Amiana Resort"
@@ -52,15 +52,15 @@
         {
             "id": 5,
             "images": [
-                "/assets/images/skylight.jpg",
-                "/assets/images/skylight-2.jpg"
+                "/assets/images/skylight.webp",
+                "/assets/images/skylight-2.webp"
             ],
             "className": "frame-5",
             "label": "skylight Nha Trang"
         },
         {
             "id": 6,
-            "images": ["/assets/images/tcc.jpg", "/assets/images/me-2.jpg"],
+            "images": ["/assets/images/tcc.webp", "/assets/images/me-2.jpg"],
             "className": "frame-6",
             "label": "TCC Hospital"
         }
