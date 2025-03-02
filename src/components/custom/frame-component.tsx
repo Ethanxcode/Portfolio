@@ -1,4 +1,5 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 import { useState } from 'react';
 import { Button } from '../ui/button';
 import { Label } from '../ui/label';
@@ -105,9 +106,14 @@ export function FrameComponent({
                     />
                 ) : (
                     // Sử dụng Next.js Image với loading="lazy" để giảm giật/lag
-                    <BlurImage
+                    <Image
                         src={mediaList[currentIndex] || '/placeholder.svg'}
                         alt={label}
+                        fill // Thay cho layout="fill" trong Next.js 13
+                        style={{ objectFit: 'cover' }}
+                        loading="lazy" // Lazy load
+                        placeholder="blur"
+                        quality={75} // Giảm chất lượng chút để giảm size
                     />
                 )}
             </div>
