@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { FrameComponent } from './frame-component';
 import framesData from '@/lib/media.json';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
@@ -74,15 +74,15 @@ export default function DynamicFrameLayout() {
         return (
             <section
                 id="collections"
-                className=" flex-col gap-4 py-16 sm:py-32 hidden md:flex"
+                className="hidden flex-col gap-4 py-16 sm:py-32 md:flex"
             >
-                <div className="text-center mb-12">
-                    <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded">
-                        Where I've traveled
+                <div className="mb-12 text-center">
+                    <h2 className="scroll-m-20 font-mplus-rounded text-3xl font-extrabold tracking-tight lg:text-4xl">
+                        Where I&apos;ve traveled
                     </h2>
-                    <p className="text-lg text-muted-foreground leading-7">
-                        A collection of places I've visited, special moments,
-                        and memories captured in time.
+                    <p className="text-lg leading-7 text-muted-foreground">
+                        A collection of places I&apos;ve visited, special
+                        moments, and memories captured in time.
                     </p>
                 </div>
 
@@ -120,21 +120,21 @@ export default function DynamicFrameLayout() {
     return (
         <section
             id="projects"
-            className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16"
+            className="flex flex-col items-center justify-center gap-4 py-16 sm:py-32"
         >
-            <div className="text-center mb-12">
-                <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded">
-                    Where I've traveled
+            <div className="mb-12 text-center">
+                <h2 className="scroll-m-20 font-mplus-rounded text-3xl font-extrabold tracking-tight lg:text-4xl">
+                    Where I&apos;ve traveled
                 </h2>
-                <p className="text-lg text-muted-foreground leading-7">
-                    A collection of places I've visited, special moments, and
-                    memories captured in time.
+                <p className="text-lg leading-7 text-muted-foreground">
+                    A collection of places I&apos;ve visited, special moments,
+                    and memories captured in time.
                 </p>
             </div>
 
-            <div className="w-full h-[100dvh] overflow-hidden">
+            <div className="h-[100dvh] w-full overflow-hidden">
                 <div
-                    className="relative w-full h-full"
+                    className="relative h-full w-full"
                     style={{
                         display: 'grid',
                         gridTemplateRows: getRowSizes(),

@@ -82,21 +82,21 @@ export const InfiniteMovingCards = ({
         <div
             ref={containerRef}
             className={cn(
-                'scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]',
+                'scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]',
                 className,
             )}
         >
             <ul
                 ref={scrollerRef}
                 className={cn(
-                    ' flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap',
-                    start && 'animate-scroll ',
+                    'flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4',
+                    start && 'animate-scroll',
                     pauseOnHover && 'hover:[animation-play-state:paused]',
                 )}
             >
-                {items.map((item, idx) => (
+                {items.map((item) => (
                     <li
-                        className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px] shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"
+                        className="relative w-[350px] max-w-full flex-shrink-0 rounded-2xl border border-b-0 border-slate-700 px-8 py-6 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] md:w-[450px]"
                         style={{
                             background:
                                 'conic-gradient(at bottom right, #1d4ed8, #1e40af, #111827)',
@@ -104,15 +104,15 @@ export const InfiniteMovingCards = ({
                         // 'linear-gradient(180deg, var(--slate-800), var(--slate-900)',
                         key={item.name}
                     >
-                        <div className="flex py-2 gap-1">
+                        <div className="flex gap-1 py-2">
                             <div className="">
-                                <span className="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
+                                <span className="center inline-block h-3 w-3 rounded-full bg-red-500"></span>
                             </div>
                             <div className="circle">
-                                <span className="bg-yellow-500 inline-block center w-3 h-3 rounded-full"></span>
+                                <span className="center inline-block h-3 w-3 rounded-full bg-yellow-500"></span>
                             </div>
                             <div className="circle">
-                                <span className="bg-green-500 box inline-block center w-3 h-3 rounded-full"></span>
+                                <span className="box center inline-block h-3 w-3 rounded-full bg-green-500"></span>
                             </div>
                         </div>
                         <blockquote>
@@ -120,15 +120,15 @@ export const InfiniteMovingCards = ({
                                 aria-hidden="true"
                                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
                             ></div>
-                            <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+                            <span className="relative z-20 text-sm font-normal leading-[1.6] text-gray-100">
                                 {item.quote}
                             </span>
                             <div className="relative z-20 mt-6 flex flex-row items-center">
                                 <span className="flex flex-col gap-1">
-                                    <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                                    <span className="text-sm font-normal leading-[1.6] text-gray-400">
                                         {item.name}
                                     </span>
-                                    <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                                    <span className="text-sm font-normal leading-[1.6] text-gray-400">
                                         {item.title}
                                     </span>
                                 </span>

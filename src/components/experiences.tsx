@@ -23,24 +23,20 @@ export default function Experiences() {
     return (
         <section
             id="experiences"
-            className="bg-background text-foreground sm:py-32 py-16"
+            className="bg-background py-16 text-foreground sm:py-32"
         >
-            <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded">
-                Where I've Worked
+            <h2 className="scroll-m-20 font-mplus-rounded text-3xl font-extrabold tracking-tight lg:text-4xl">
+                Where I&#39;ve Worked
             </h2>
             <br />
             <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-1/3 lg:w-1/4 mb-4 md:mb-0 overflow-x-auto md:overflow-x-visible">
+                <div className="mb-4 w-full overflow-x-auto md:mb-0 md:w-1/3 md:overflow-x-visible lg:w-1/4">
                     <div className="flex md:flex-col md:border-l md:border-border">
                         {workExperiences.map((exp) => (
                             <Button
                                 key={exp.company}
                                 variant="ghost"
-                                className={`px-4 py-2 text-sm min-w-[120px] md:w-full justify-start rounded-none ${
-                                    selectedCompany.company === exp.company
-                                        ? 'bg-secondary md:border-l-2 md:border-primary'
-                                        : ''
-                                }`}
+                                className={`min-w-[120px] justify-start rounded-none px-4 py-2 text-sm md:w-full ${selectedCompany.company === exp.company ? 'bg-secondary md:border-l-2 md:border-primary' : ''}`}
                                 onClick={() => setSelectedCompany(exp)}
                                 aria-label={`Show work experience at ${exp.company}`}
                             >
@@ -51,21 +47,21 @@ export default function Experiences() {
                         ))}
                     </div>
                 </div>
-                <div className="w-full md:w-2/3 lg:w-3/4 md:pl-8">
-                    <h3 className="text-xl font-semibold mb-1">
+                <div className="w-full md:w-2/3 md:pl-8 lg:w-3/4">
+                    <h3 className="mb-1 text-xl font-semibold">
                         {selectedCompany.position}{' '}
                         <span className="text-primary">
                             @ {selectedCompany.company}
                         </span>
                     </h3>
-                    <p className="text-sm text-muted-foreground mb-4">
+                    <p className="mb-4 text-sm text-muted-foreground">
                         {selectedCompany.duration}
                     </p>
                     <ul className="space-y-4">
                         {selectedCompany.responsibilities.map(
                             (responsibility, index) => (
                                 <li key={index} className="flex items-start">
-                                    <ArrowRightIcon className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
+                                    <ArrowRightIcon className="mr-2 mt-1 h-4 w-4 flex-shrink-0 text-primary" />
                                     <span>{responsibility}</span>
                                 </li>
                             ),
@@ -73,7 +69,7 @@ export default function Experiences() {
                     </ul>
                     <br />
                     {selectedCompany.skills && (
-                        <div className="flex gap-2 flex-wrap">
+                        <div className="flex flex-wrap gap-2">
                             {selectedCompany.skills.map((skill, index) => (
                                 <Reveal
                                     key={skill}

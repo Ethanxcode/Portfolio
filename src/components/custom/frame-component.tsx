@@ -1,5 +1,4 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Image from 'next/image';
 import { useState } from 'react';
 import { Button } from '../ui/button';
 import { Label } from '../ui/label';
@@ -114,18 +113,18 @@ export function FrameComponent({
             </div>
             {isHovered && mediaList.length > 1 && (
                 <>
-                    <div className="absolute bottom-0 left-0 right-0 p-2 bg-black bg-opacity-50 z-10">
-                        <Label className="text-white font-bold">{label}</Label>
+                    <div className="absolute bottom-0 left-0 right-0 z-10 bg-black bg-opacity-50 p-2">
+                        <Label className="font-bold text-white">{label}</Label>
                     </div>
                     <Button
                         onClick={prevMedia}
-                        className="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 bg-gray-700 text-white p-2 rounded-full"
+                        className="absolute left-2 top-1/2 z-20 -translate-y-1/2 transform rounded-full bg-gray-700 p-2 text-white"
                     >
                         <ChevronLeft />
                     </Button>
                     <Button
                         onClick={nextMedia}
-                        className="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-gray-700 text-white p-2 rounded-full"
+                        className="absolute right-2 top-1/2 z-20 -translate-y-1/2 transform rounded-full bg-gray-700 p-2 text-white"
                     >
                         <ChevronRight />
                     </Button>

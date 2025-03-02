@@ -27,8 +27,8 @@ export function ProjectCard3d({
 }: ProjectCardProps) {
     return (
         <CardContainer className="inter-var">
-            <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] sm:w-[30rem] h-auto w-auto rounded-xl p-6 border">
-                <CardItem translateZ="50" className="w-full mt-4">
+            <CardBody className="group/card relative h-auto w-auto rounded-xl border border-black/[0.1] bg-gray-50 p-6 sm:w-[30rem] dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
+                <CardItem translateZ="50" className="mt-4 w-full">
                     <AspectRatio ratio={16 / 9} className="bg-muted">
                         <Image
                             src={imageUrl}
@@ -41,7 +41,7 @@ export function ProjectCard3d({
                 <CardItem
                     as="h3"
                     translateZ="60"
-                    className="scroll-m-20 text-2xl font-semibold tracking-tight mt-4"
+                    className="mt-4 scroll-m-20 text-2xl font-semibold tracking-tight"
                 >
                     {title}
                 </CardItem>
@@ -55,14 +55,14 @@ export function ProjectCard3d({
                 <CardItem
                     as="p"
                     translateZ="50"
-                    className="leading-7 [&:not(:first-child)]:mt-6 text-muted-foreground"
+                    className="leading-7 text-muted-foreground [&:not(:first-child)]:mt-6"
                 >
                     {description}
                 </CardItem>
                 {skills && (
                     <CardItem
                         translateZ="40"
-                        className="flex gap-2 flex-wrap mt-6"
+                        className="mt-6 flex flex-wrap gap-2"
                     >
                         {skills.map((skill) => (
                             <Badge key={skill} variant="default">
@@ -71,7 +71,7 @@ export function ProjectCard3d({
                         ))}
                     </CardItem>
                 )}
-                <div className="flex justify-between items-center mt-10">
+                <div className="mt-10 flex items-center justify-between">
                     {githubUrl && (
                         <CardItem translateZ={30}>
                             <Link

@@ -4,7 +4,7 @@ const ClaudeAi = () => {
     return (
         <div
             id="style-ed6AE"
-            className="rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)] h-8 w-8 circle-1 style-ed6AE"
+            className="circle-1 style-ed6AE flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]"
         >
             <svg
                 className="h-8 w-8"

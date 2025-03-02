@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 export default function Marquee() {
     return (
-        <div className="relative w-full overflow-hidden bg-background sm:py-32 py-16">
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background z-10" />
+        <div className="relative w-full overflow-hidden bg-background py-16 sm:py-32">
+            <div className="absolute inset-0 z-10 bg-gradient-to-r from-background via-transparent to-background" />
             <motion.div
                 className="flex whitespace-nowrap"
                 animate={{ x: ['0%', '-50%'] }}
@@ -16,9 +16,9 @@ export default function Marquee() {
                 }}
             >
                 {[...Array(4)].map((_, index) => (
-                    <div key={index} className="flex items-center mx-4">
+                    <div key={index} className="mx-4 flex items-center">
                         <span
-                            className="text-7xl sm:text-8xl md:text-9xl font-bold text-transparent px-4 "
+                            className="px-4 text-7xl font-bold text-transparent sm:text-8xl md:text-9xl"
                             style={{
                                 WebkitTextStroke:
                                     '2px hsl(var(--muted-foreground))', // tailwind gray-400

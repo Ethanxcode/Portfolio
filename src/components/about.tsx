@@ -2,10 +2,10 @@ import { Reveal } from './custom/reveal';
 
 export default function About() {
     return (
-        <section className="flex flex-col items-start justify-start gap-4 sm:py-32 py-16">
+        <section className="flex flex-col items-start justify-start gap-4 py-16 sm:py-32">
             <h2
                 id="about"
-                className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded"
+                className="scroll-m-20 font-mplus-rounded text-3xl font-extrabold tracking-tight lg:text-4xl"
             >
                 About Me
             </h2>
@@ -17,12 +17,12 @@ export default function About() {
                     transition: { duration: 0.4 },
                 }}
             >
-                <p className="text-lg text-muted-foreground leading-7">
+                <p className="text-lg leading-7 text-muted-foreground">
                     🎓 I am Tran Nguyen Dang Huy located at📍 Ho Chi Minh,
-                    Vietnam. I am also Pursuing my Associate's Degree, in{' '}
+                    Vietnam. I am also Pursuing my Associate&apos;s Degree, in{' '}
                     <strong>Information Technology</strong> and will graduate in
-                    mid-2024. I'm passionate about coding, reading, and creating
-                    valuable digital products.
+                    mid-2024. I&apos;m passionate about coding, reading, and
+                    creating valuable digital products.
                     <br />
                     <br />
                     📚 I also love reading books on Self-help & Novel. My
@@ -35,7 +35,10 @@ export default function About() {
                     art of building high-quality and scalable software
                     applications, continuously refining my skills in both
                     frontend and backend development. As the saying goes,
-                    <em>"Once you go fullstack, you never go back"</em>.
+                    <em>
+                        &quot;Once you go fullstack, you never go back&quot;
+                    </em>
+                    .
                 </p>
             </Reveal>
         </section>

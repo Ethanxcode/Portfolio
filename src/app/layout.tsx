@@ -101,7 +101,7 @@ export default function RootLayout({
                             href="https://github.com/Ethanxcode/portfolio"
                             target="_blank"
                         >
-                            <p className="text-center text-sm text-muted-foreground hover:text-white transition-all">
+                            <p className="text-center text-sm text-muted-foreground transition-all hover:text-white">
                                 © Develop by Ethan Tran · 2024
                             </p>
                         </Link>

@@ -7,16 +7,16 @@ export default function Skills() {
     return (
         <section
             id="skills"
-            className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16"
+            className="flex flex-col items-center justify-center gap-4 py-16 sm:py-32"
         >
-            <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded">
+            <h2 className="scroll-m-20 font-mplus-rounded text-3xl font-extrabold tracking-tight lg:text-4xl">
                 Skills & Tools
             </h2>
-            <p className="leading-7 text-center text-muted-foreground">
+            <p className="text-center leading-7 text-muted-foreground">
                 My primary focus lies in frontend development and backend
                 development. Full-stack is the way to go xD.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 items-start">
+            <div className="grid grid-cols-1 items-start gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                 {/* Languages */}
                 <Reveal
                     initial={{ opacity: 0, y: 50 }}
@@ -170,7 +170,7 @@ export default function Skills() {
                                     width={100}
                                     height={100}
                                     loading="lazy"
-                                    className="block dark:block hover:animate-spin"
+                                    className="block hover:animate-spin dark:block"
                                 />
                                 {/* SVG dành cho dark mode */}
                                 <Image
@@ -179,7 +179,7 @@ export default function Skills() {
                                     width={100}
                                     height={100}
                                     loading="lazy"
-                                    className="hidden dark:hidden hover:animate-spin"
+                                    className="hidden hover:animate-spin dark:hidden"
                                 />
                                 <p className="text-sm text-muted-foreground">
                                     NextJS

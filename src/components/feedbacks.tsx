@@ -19,16 +19,16 @@ export default async function Feedbacks() {
                 });
             }
         }
-    } catch (error) {
+    } catch {
         return (
             <section
                 id="feedbacks"
-                className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16"
+                className="flex flex-col items-center justify-center gap-4 py-16 sm:py-32"
             >
-                <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded">
+                <h2 className="scroll-m-20 font-mplus-rounded text-3xl font-extrabold tracking-tight lg:text-4xl">
                     Things People Say
                 </h2>
-                <p className="text-lg text-muted-foreground leading-7">
+                <p className="text-lg leading-7 text-muted-foreground">
                     Failed to fetch feedbacks. Reload the page to try again
                 </p>
             </section>
@@ -40,13 +40,13 @@ export default async function Feedbacks() {
     return (
         <section
             id="feedbacks"
-            className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16"
+            className="flex flex-col items-center justify-center gap-4 py-16 sm:py-32"
         >
-            <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded">
+            <h2 className="scroll-m-20 font-mplus-rounded text-3xl font-extrabold tracking-tight lg:text-4xl">
                 Things People Say
             </h2>
             {testimonials.length === 0 && (
-                <p className="text-lg text-muted-foreground leading-7">
+                <p className="text-lg leading-7 text-muted-foreground">
                     No feedbacks to display
                 </p>
             )}

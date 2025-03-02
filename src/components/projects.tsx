@@ -6,12 +6,12 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16"
+            className="flex flex-col items-center justify-center gap-4 py-16 sm:py-32"
         >
-            <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded">
+            <h2 className="scroll-m-20 font-mplus-rounded text-3xl font-extrabold tracking-tight lg:text-4xl">
                 Projects
             </h2>
-            <div className="flex flex-row flex-wrap gap-x-4 justify-evenly">
+            <div className="flex flex-row flex-wrap justify-evenly gap-x-4">
                 {projects.map((projects, index) => (
                     <Reveal
                         key={projects.title}

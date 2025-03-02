@@ -1,7 +1,7 @@
 import About from '@/components/about';
-import Contact from '@/components/contact';
-import CanvasPlatformer from '@/components/custom/canvas-platformer';
-import Experiences from '@/components/experiences';
+// import Contact from '@/components/contact';
+// import CanvasPlatformer from '@/components/custom/canvas-platformer';
+// import Experiences from '@/components/experiences';
 import Feedbacks from '@/components/feedbacks';
 import Hero from '@/components/hero';
 import Projects from '@/components/projects';

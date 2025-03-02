@@ -49,12 +49,12 @@ export function ExperienceCard({
                         transition: { duration: 0.4 },
                     }}
                 >
-                    <p className="text-lg text-muted-foreground leading-7">
+                    <p className="text-lg leading-7 text-muted-foreground">
                         {description}
                     </p>
                 </Reveal>
                 {skills && (
-                    <div className="flex gap-2 flex-wrap">
+                    <div className="flex flex-wrap gap-2">
                         {skills.map((skill, index) => (
                             <Reveal
                                 key={skill}

@@ -4,7 +4,7 @@ const Gemini = () => {
     return (
         <div
             id="style-cq179"
-            className="rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)] h-8 w-8 circle-5 style-cq179"
+            className="circle-5 style-cq179 flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]"
         >
             <svg
                 className="h-4 w-4"

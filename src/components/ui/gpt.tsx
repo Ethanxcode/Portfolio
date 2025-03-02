@@ -8,7 +8,7 @@ const ChatGpt: React.FC<Props> = ({ className }) => {
     return (
         <div
             id="style-co8vS"
-            className={`h-28 w-28 rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)] circle-3 style-co8vS ${className || ''}`}
+            className={`circle-3 style-co8vS flex h-28 w-28 items-center justify-center rounded-full bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)] ${className || ''}`}
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ const ChatGpt: React.FC<Props> = ({ className }) => {
                 viewBox="0 0 28 28"
                 width="56"
                 height="56"
-                className=" dark:text-white"
+                className="dark:text-white"
             >
                 <path
                     fill="currentColor"

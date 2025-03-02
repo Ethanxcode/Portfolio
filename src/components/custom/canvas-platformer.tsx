@@ -237,8 +237,8 @@ const CanvasPlatformer: React.FC<PlatformerProps> = ({ rows = 25 }) => {
         if (!canvas) return;
         const pos = positionRef.current;
         const vel = velocityRef.current;
-        let w = canvas.width;
-        let h = canvas.height;
+        const w = canvas.width;
+        const h = canvas.height;
         let groundY = h;
         for (const b of platformBlocksRef.current) {
             const horizontallyOverlapping =
@@ -276,9 +276,9 @@ const CanvasPlatformer: React.FC<PlatformerProps> = ({ rows = 25 }) => {
             <ActionButton hotkey="→" onClick={handleRightClick}>
                 Right
             </ActionButton>
-            <div className="w-full h-auto relative">
+            <div className="relative h-auto w-full">
                 <canvas
-                    className="block w-full bg-transparent  focus:outline-0 focus:shadow-[inset_0_0_0_1px_var(rgba(239, 99, 0, 1))]"
+                    className="focus:shadow-[inset_0_0_0_1px_var(rgba(239, 99, 0, 1))] block w-full bg-transparent focus:outline-0"
                     ref={canvasRef}
                 />
             </div>

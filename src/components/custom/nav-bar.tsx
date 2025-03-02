@@ -25,7 +25,7 @@ export function NavigationBar() {
         <>
             <NavigationMenu
                 aria-label="Primary Navigation"
-                className="hidden sm:flex sm:sticky sm:top-4 min-w-[40%] rounded-[4rem] bg-black dark:bg-opacity-20 bg-opacity-10 backdrop-blur-lg container py-4 justify-center border-b border-border/40 dark:shadow-2xl dark:shadow-blue-500/[0.1] gap-4 z-50"
+                className="container z-50 hidden min-w-[40%] justify-center gap-4 rounded-[4rem] border-b border-border/40 bg-black bg-opacity-10 py-4 backdrop-blur-lg sm:sticky sm:top-4 sm:flex dark:bg-opacity-20 dark:shadow-2xl dark:shadow-blue-500/[0.1]"
             >
                 {/* className="hidden sm:flex sm:sticky sm:top-0 min-w-full bg-black bg-opacity-20 backdrop-blur-lg container py-4 justify-between border-b border-border/40" */}
                 <Avatar
@@ -97,7 +97,7 @@ export function NavigationBar() {
             </NavigationMenu>
             <Sheet>
                 <SheetTrigger
-                    className="sm:hidden sticky top-0 bg-black bg-opacity-20 backdrop-blur-lg container py-2 justify-end flex z-10"
+                    className="container sticky top-0 z-10 flex justify-end bg-black bg-opacity-20 py-2 backdrop-blur-lg sm:hidden"
                     aria-label="Open Mobile Navigation Menu"
                 >
                     <Menu />
@@ -105,9 +105,9 @@ export function NavigationBar() {
                 <SheetContent className="w-1/3">
                     <NavigationMenu
                         aria-label="Mobile Navigation"
-                        className="flex flex-col w-full"
+                        className="flex w-full flex-col"
                     >
-                        <NavigationMenuList className="w-full justify-end flex-col pt-4">
+                        <NavigationMenuList className="w-full flex-col justify-end pt-4">
                             <NavigationMenuItem>
                                 <NavigationMenuLink
                                     className={navigationMenuTriggerStyle()}

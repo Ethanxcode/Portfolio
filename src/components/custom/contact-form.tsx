@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useTransition } from 'react';
 import { motion } from 'framer-motion';
 import * as z from 'zod';
 import { Button } from '@/components/ui/button';
@@ -32,7 +32,7 @@ const formSchema = z.object({
 });
 
 export default function ContactForm() {
-    const [isSubmitting, setIsSubmitting] = useState(false);
+    // const [isSubmitting, setIsSubmitting] = useState(false);
     const [isPending, startTransition] = useTransition();
 
     const form = useForm<z.infer<typeof formSchema>>({
@@ -79,20 +79,20 @@ export default function ContactForm() {
     }
 
     return (
-        <section id="contact" className="bg-background sm:py-32 py-16">
+        <section id="contact" className="bg-background py-16 sm:py-32">
             {/* <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8"> */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="text-center mb-12"
+                className="mb-12 text-center"
             >
-                <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl font-mplus-rounded">
+                <h2 className="scroll-m-20 font-mplus-rounded text-3xl font-extrabold tracking-tight lg:text-4xl">
                     Get in Touch
                 </h2>
-                <p className="text-lg text-muted-foreground leading-7">
-                    We'd love to hear from you. Fill out the form below and
-                    we'll get back to you as soon as possible.
+                <p className="text-lg leading-7 text-muted-foreground">
+                    We&apos;d love to hear from you. Fill out the form below and
+                    we&apos;ll get back to you as soon as possible.
                 </p>
             </motion.div>
             <motion.div
@@ -190,10 +190,10 @@ export default function ContactForm() {
                         <Button
                             type="submit"
                             aria-label="Send your message"
-                            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-blue-500 bg-[linear-gradient(110deg,#000103,45%,#4C1D95,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 shadow-2xl shadow-blue-500/20 w-full"
-                            disabled={isSubmitting}
+                            className="inline-flex h-12 w-full animate-shimmer items-center justify-center rounded-md border border-blue-500 bg-[linear-gradient(110deg,#000103,45%,#4C1D95,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-200 shadow-2xl shadow-blue-500/20 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                            disabled={isPending}
                         >
-                            {isSubmitting ? 'Sending...' : 'Send Message'}
+                            {isPending ? 'Sending...' : 'Send Message'}
                         </Button>
 
                         {/* border-slate-800  bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] */}

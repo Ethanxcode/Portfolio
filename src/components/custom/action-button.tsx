@@ -14,7 +14,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
 }) => {
     return (
         <div
-            className="inline-flex items-center justify-between cursor-pointer outline-none border-0 m-0 p-0 box-border font-mono text-base"
+            className="m-0 box-border inline-flex cursor-pointer items-center justify-between border-0 p-0 font-mono text-base outline-none"
             onClick={onClick}
             tabIndex={0}
             role="button"
@@ -25,7 +25,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         >
             {Utilities.isEmpty(hotkey) ? null : (
                 <span
-                    className="flex-shrink-0 cursor-pointer transition ease-in-out duration-200 font-normal px-1 select-none"
+                    className="flex-shrink-0 cursor-pointer select-none px-1 font-normal transition duration-200 ease-in-out"
                     style={{
                         background: 'var(--theme-button-foreground)',
                         color: 'var(--theme-text)',
@@ -36,7 +36,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
                 </span>
             )}
             <span
-                className="w-full font-normal cursor-pointer px-1 uppercase transition ease-in-out duration-200 select-none"
+                className="w-full cursor-pointer select-none px-1 font-normal uppercase transition duration-200 ease-in-out"
                 style={{
                     boxShadow: 'inset 0 0 0 2px var(--theme-button-foreground)',
                     background: 'var(--theme-button-background)',

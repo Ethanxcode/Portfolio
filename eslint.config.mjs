@@ -1,6 +1,8 @@
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { FlatCompat } from '@eslint/eslintrc';
+import prettierPlugin from 'eslint-plugin-prettier';
+import typescriptPlugin from '@typescript-eslint/eslint-plugin';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -15,28 +17,42 @@ export default [
         'next/typescript',
         'plugin:@typescript-eslint/recommended',
         'plugin:prettier/recommended',
+        'plugin:import/errors',
+        'plugin:import/typescript',
+        'prettier',
     ),
     {
-        parserOptions: {
-            project: 'tsconfig.json',
-            tsconfigRootDir: __dirname,
-            sourceType: 'module',
+        languageOptions: {
             ecmaVersion: 'latest',
+            sourceType: 'module',
+            globals: {
+                browser: true,
+                node: true,
+                jest: true,
+            },
         },
-        plugins: [],
-        root: true,
-        env: {
-            browser: true,
-            node: true,
-            jest: true,
+        plugins: {
+            prettier: prettierPlugin,
+            '@typescript-eslint': typescriptPlugin,
         },
-        ignorePatterns: ['.eslintrc.js', 'node_modules/', 'dist/'],
+
+        ignores: ['.eslintrc.js', 'node_modules/', 'dist/', 'src/components/ui', '/src/utils/utilities.ts'],
         rules: {
             '@typescript-eslint/interface-name-prefix': 'off',
             '@typescript-eslint/explicit-function-return-type': 'off',
             '@typescript-eslint/explicit-module-boundary-types': 'off',
             '@typescript-eslint/no-explicit-any': 'off',
             'prettier/prettier': 'error',
+            '@typescript-eslint/no-unused-vars': 'warn',
+            'react-hooks/rules-of-hooks': 'warn',
+            'react-hooks/exhaustive-deps': 'warn',
+            'prefer-const': 'warn',
+            'react/no-unescaped-entities': 'warn',
+            'react/display-name': 'off',
+            '@typescript-eslint/ban-ts-comment': 'off',
+            '@typescript-eslint/no-require-imports': 'off',
+            'prefer-rest-params': 'off',
+            'prefer-spread': 'off',
         },
     },
 ];

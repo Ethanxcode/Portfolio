@@ -19,9 +19,9 @@ export default function Hero() {
     return (
         <header
             id="hero"
-            className="flex flex-col sm:flex-row h-screen w-full justify-center items-center gap-4 mt-16"
+            className="mt-16 flex h-screen w-full flex-col items-center justify-center gap-4 sm:flex-row"
         >
-            <div className="flex flex-col gap-2 w-full">
+            <div className="flex w-full flex-col gap-2">
                 <TypewriterEffectSmooth words={name} />
                 <Reveal
                     initial={{ opacity: 0, x: 50 }}
@@ -31,7 +31,7 @@ export default function Hero() {
                         transition: { duration: 0.4 },
                     }}
                 >
-                    <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight bg-clip-text text-transparent bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 bg-opacity-50 font-mplus-rounded from-neutral-900 to-neutral-700">
+                    <h3 className="scroll-m-20 bg-opacity-50 bg-gradient-to-b from-neutral-900 to-neutral-700 bg-clip-text font-mplus-rounded text-2xl font-semibold tracking-tight text-transparent dark:from-neutral-50 dark:to-neutral-400">
                         Junior Full-stack Developer
                     </h3>
                 </Reveal>
@@ -43,8 +43,9 @@ export default function Hero() {
                         transition: { duration: 0.4, delay: 0.2 },
                     }}
                 >
-                    <p className="leading-7 font-mplus-rounded">
-                        I Love'd to explore, build, test and deploy software.
+                    <p className="font-mplus-rounded leading-7">
+                        I Love&#39;d to explore, build, test and deploy
+                        software.
                     </p>
                 </Reveal>
                 <div className="flex gap-4">
@@ -169,7 +170,7 @@ export default function Hero() {
                     </TooltipProvider>
                 </div>
             </div>
-            <div className="flex relative w-full h-full">
+            <div className="relative flex h-full w-full">
                 <Image
                     src={'/assets/images/me-3.jpg'}
                     alt="Me"
