@@ -79,7 +79,10 @@ export default function ContactForm() {
     }
 
     return (
-        <section id="contact" className="bg-background py-16 sm:py-32">
+        <section
+            id="contact"
+            className="inset-0 z-10 bg-background bg-gradient-to-r from-background via-transparent to-background p-16 sm:p-32"
+        >
             {/* <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8"> */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -190,7 +193,7 @@ export default function ContactForm() {
                         <Button
                             type="submit"
                             aria-label="Send your message"
-                            className="inline-flex h-12 w-full animate-shimmer items-center justify-center rounded-md border border-blue-500 bg-[linear-gradient(110deg,#000103,45%,#4C1D95,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-200 shadow-2xl shadow-blue-500/20 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                            className="inline-flex h-12 w-full animate-shimmer items-center justify-center rounded-md border border-blue-500 bg-[linear-gradient(110deg,#000103,45%,#4C1D95,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-stone-200 shadow-2xl shadow-blue-500/20 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
                             disabled={isPending}
                         >
                             {isPending ? 'Sending...' : 'Send Message'}

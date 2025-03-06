@@ -21,7 +21,7 @@ export default function Hero() {
             id="hero"
             className="mt-16 flex h-screen w-full flex-col items-center justify-center gap-4 sm:flex-row"
         >
-            <div className="flex w-full flex-col gap-2">
+            <div className="text-spotlight flex w-full flex-col gap-2">
                 <TypewriterEffectSmooth words={name} />
                 <Reveal
                     initial={{ opacity: 0, x: 50 }}
@@ -31,7 +31,11 @@ export default function Hero() {
                         transition: { duration: 0.4 },
                     }}
                 >
-                    <h3 className="scroll-m-20 bg-opacity-50 bg-gradient-to-b from-neutral-900 to-neutral-700 bg-clip-text font-mplus-rounded text-2xl font-semibold tracking-tight text-transparent dark:from-neutral-50 dark:to-neutral-400">
+                    {/* <Spotlight
+                        className="-top-2 left-0 md:-top-20 md:left-60"
+                        fill="white"
+                    /> */}
+                    <h3 className="scroll-m-20 bg-opacity-50 bg-gradient-to-b from-neutral-900 to-neutral-700 bg-clip-text font-mplus-rounded text-2xl font-semibold tracking-tight text-stone-400 text-transparent dark:from-neutral-50 dark:to-neutral-400">
                         Junior Full-stack Developer
                     </h3>
                 </Reveal>

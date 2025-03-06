@@ -24,14 +24,14 @@ const mPlusRounded = M_PLUS_Rounded_1c({
 });
 
 export const metadata: Metadata = {
-    title: 'Ethan Tran | Full-Stack Developer',
+    title: 'Ethan Tran',
     description:
-        'I explore, play, build, test and deploy software. Check out my creative portfolio to see my projects and design process.',
+        'I explore, play, build, test and deploy software. Discover my projects, and development journey.',
     keywords: [
+        'Ethan Tran',
         'Full-stack developer',
         'portfolio',
         'software engineering',
-        'Ethan Tran',
     ],
     robots: {
         index: true,
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         canonical: 'https://ethantran.is-a.dev',
     },
     openGraph: {
-        title: 'Ethan Tran | Full-Stack Developer',
+        title: 'Ethan Tran',
         description:
             'I explore, play, build, test and deploy software. Discover my projects, and development journey.',
         url: 'https://ethantran.is-a.dev',
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Ethan Tran - Portfolio',
+        title: 'Ethan Tran',
         description:
-            'I plan, design, build, test and deploy software. Check out my projects and creative process!',
+            'I explore, play, build, test and deploy software. Discover my projects, and development journey.',
         creator: '@Ethancodes_', // Nếu có account Twitter
         // images: ['https://ethantran.is-a.dev/twitter-og-image.jpg'],
         images: ['https://ethantran.is-a.dev/assets/images/logo.png'],
@@ -95,7 +95,22 @@ export default function RootLayout({
                     disableTransitionOnChange
                 >
                     <NavigationBar />
-                    <main className="container mx-auto">{children}</main>
+                    <div className="relative min-h-screen w-full overflow-hidden bg-background fade-in">
+                        {/* Grid overlay */}
+                        <div
+                            className="absolute inset-0 z-0"
+                            style={{
+                                backgroundImage: `
+              linear-gradient(to right, var(--theme-grid-color) 1px, transparent 1px),
+              linear-gradient(to bottom, var(--theme-grid-color) 1px, transparent 1px)
+            `,
+                                backgroundSize: '32px 32px',
+                                backgroundPosition: '0 0',
+                            }}
+                        />
+                        <main className="container mx-auto">{children}</main>
+                    </div>
+
                     <footer className="container mx-auto py-4">
                         <Link
                             href="https://github.com/Ethanxcode/portfolio"

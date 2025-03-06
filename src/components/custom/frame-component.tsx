@@ -107,12 +107,11 @@ export function FrameComponent({
                 ) : (
                     // Sử dụng Next.js Image với loading="lazy" để giảm giật/lag
                     <Image
-                        src={mediaList[currentIndex] || '/placeholder.svg'}
+                        src={mediaList[currentIndex]}
                         alt={label}
                         fill // Thay cho layout="fill" trong Next.js 13
                         style={{ objectFit: 'cover' }}
                         loading="lazy" // Lazy load
-                        placeholder="blur"
                         quality={75} // Giảm chất lượng chút để giảm size
                     />
                 )}

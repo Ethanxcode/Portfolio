@@ -14,7 +14,9 @@
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 28.1%;
+    /* --muted-foreground: 240 3.8% 28.1%; */
+    --muted-foreground: 24, 6%, 83%;
+
     --accent: 240 4.8% 95.9%;
     --accent-foreground: 240 5.9% 10%;
     --destructive: 0 84.2% 60.2%;
@@ -24,7 +26,8 @@
     --ring: 240 5.9% 10%;
     --radius: 0.5rem;
 
-    --theme-text: rgba(0, 0, 0, 1);
+    --theme-text: rgb(15, 20, 26);
+    --theme-grid-color: rgba(75, 75, 75, 0.1);
     --theme-border: rgba(224, 224, 224, 1);
     --theme-button-foreground: rgba(15, 98, 254, 1);
     --theme-focused-foreground: rgba(92, 255, 59, 1);
@@ -36,6 +39,7 @@
         --background: 220 15% 5%;
         --foreground: 0 0% 98%;
         --card: 240 10% 3.9%;
+
         --card-foreground: 0 0% 98%;
         --popover: 240 10% 3.9%;
         --popover-foreground: 0 0% 98%;
@@ -53,8 +57,9 @@
         --input: 240 3.7% 15.9%;
         --ring: 240 4.9% 83.9%;
 
-        --theme-text: rgba(255, 255, 255, 1)
-            /* --theme-text: rgba(59, 130, 246, 0.1); */;
+        --theme-text: rgba(255, 255, 255, 1);
+        --theme-grid-color: rgba(75, 75, 75, 0.1);
+        /* --theme-text: rgba(59, 130, 246, 0.1); */
         --theme-button-foreground: rgba(38, 38, 38, 1);
         --theme-focused-foreground: rgba(239, 99, 0, 1);
         --theme-border: rgba(38, 38, 38, 1);
@@ -69,4 +74,11 @@
     body {
         @apply bg-background text-foreground;
     }
+}
+
+.text-spotlight {
+    text-shadow:
+        0 5px 20px #0057ff33,
+        0 -5px 15px #ff5a0026,
+        0 0 8px #ffffff4d;
 }

@@ -96,10 +96,13 @@ export const InfiniteMovingCards = ({
             >
                 {items.map((item) => (
                     <li
-                        className="relative w-[350px] max-w-full flex-shrink-0 rounded-2xl border border-b-0 border-slate-700 px-8 py-6 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] md:w-[450px]"
+                        className="relative w-[350px] max-w-full flex-shrink-0 rounded-2xl border border-b-0 dark:border-stone-700 border-stone-200 px-8 py-6 shadow-[rgba(,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] md:w-[450px]"
                         style={{
-                            background:
-                                'conic-gradient(at bottom right, #1d4ed8, #1e40af, #111827)',
+                            // background:
+                            //     'conic-gradient(at bottom right, #1d4ed8, #1e40af, #111827)',
+                            background: 'conic-gradient(at bottom right, hsl(var(--primary)), hsl(var(--card)), hsl(var(--primary-foreground)))'
+
+
                         }}
                         // 'linear-gradient(180deg, var(--slate-800), var(--slate-900)',
                         key={item.name}
@@ -125,10 +128,10 @@ export const InfiniteMovingCards = ({
                             </span>
                             <div className="relative z-20 mt-6 flex flex-row items-center">
                                 <span className="flex flex-col gap-1">
-                                    <span className="text-sm font-normal leading-[1.6] text-gray-400">
+                                    <span className="text-sm dark:font-normal leading-[1.6] dark:text-gray-400 text-gray-300 font-semibold">
                                         {item.name}
                                     </span>
-                                    <span className="text-sm font-normal leading-[1.6] text-gray-400">
+                                    <span className="text-sm dark:font-normal leading-[1.6] dark:text-gray-400 text-gray-300 font-semibold">
                                         {item.title}
                                     </span>
                                 </span>

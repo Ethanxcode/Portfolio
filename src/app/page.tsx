@@ -20,7 +20,7 @@ export default function Home() {
             <Separator />
             <About />
             <Separator />
-            <DynamicFrameLayout />
+            {/* <DynamicFrameLayout /> */}
             <Separator />
             <Timeline />
             <Separator />
