@@ -89,5 +89,23 @@
             "SEO",
             "Server actions"
         ]
+    },
+    {
+        "title": "Lexai - The AI-powered language translation tool",
+        "description": "Built with Next.js, Tailwind CSS, and Framer Motion, integrating OpenRouter (upgraded from OpenAI) for advanced AI capabilities. Lexai offers: Natural AI Translation – Smooth and accurate meaning delivery, grammar Analysis – Understand sentence structure effectively, Cultural Adaptation – Ensures contextually appropriate translations.",
+        "type": "Build in public",
+        "imageUrl": "/assets/images/lexai.webp",
+        "demoUrl": "https://lexai.cyber-nerds.site/",
+        "skills": [
+            "Nextjs",
+            "OpenAI",
+            "TypeScript",
+            "Tailwind CSS",
+            "OpenRouter",
+            "Axios",
+            "Shadcn UI",
+            "Lucide",
+            "SEO"
+        ]
     }
 ]

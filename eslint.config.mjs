@@ -36,7 +36,14 @@ export default [
             '@typescript-eslint': typescriptPlugin,
         },
 
-        ignores: ['.eslintrc.js', 'node_modules/', 'dist/', 'src/components/ui', '/src/utils/utilities.ts'],
+        ignores: [
+            '.eslintrc.js',
+            'node_modules/',
+            'dist/',
+            'src/components/ui',
+            '/src/utils/utilities.ts',
+        ],
+
         rules: {
             '@typescript-eslint/interface-name-prefix': 'off',
             '@typescript-eslint/explicit-function-return-type': 'off',

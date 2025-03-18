@@ -18,27 +18,17 @@ export default function About() {
                 }}
             >
                 <p className="text-lg leading-7 text-muted-foreground">
-                    🎓 I am Tran Nguyen Dang Huy located at📍 Ho Chi Minh,
-                    Vietnam. I am also Pursuing my Associate&apos;s Degree, in{' '}
-                    <strong>Information Technology</strong> and will graduate in
-                    mid-2024. I&apos;m passionate about coding, reading, and
-                    creating valuable digital products.
+                    🎓 I am <strong>Tran Nguyen Dang Huy</strong> from 📍 Ho Chi Minh, Vietnam.
+                    I have graduated with a degree in <strong>Information Technology</strong> and
+                    currently work as a <strong>Full Stack Developer</strong> with over <strong>1 year of experience</strong>.
+                    My passion lies in building high-quality, scalable software applications, mastering both frontend
+                    and backend development. As the saying goes,
+                    <em> "Once you go full stack, you never go back."</em>
                     <br />
                     <br />
-                    📚 I also love reading books on Self-help & Novel. My
-                    favorite ones are Kafka At The Shore by Murakami Haruki in
-                    the genre of the novel and THE COURAGE TO BE DISLIKED by
-                    Ksishimi Ichiro & Koga Fumitake in the genre of self-help.
-                    <br />
-                    <br />
-                    Presently, my primary focus revolves around mastering the
-                    art of building high-quality and scalable software
-                    applications, continuously refining my skills in both
-                    frontend and backend development. As the saying goes,
-                    <em>
-                        &quot;Once you go fullstack, you never go back&quot;
-                    </em>
-                    .
+                    📚 Besides coding, I enjoy reading books, particularly in self-help and fiction.
+                    Some of my favorites include <strong>Kafka on the Shore</strong> by <em>Haruki Murakami</em>
+                    and <strong>The Courage to Be Disliked</strong> by <em>Ichiro Kishimi & Fumitake Koga</em>.
                 </p>
             </Reveal>
         </section>

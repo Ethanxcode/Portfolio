@@ -95,20 +95,24 @@ export default function RootLayout({
                     disableTransitionOnChange
                 >
                     <NavigationBar />
-                    <div className="relative min-h-screen w-full overflow-hidden bg-background fade-in">
+                    <div className="relative min-h-dvh w-full overflow-hidden bg-background fade-in">
                         {/* Grid overlay */}
-                        <div
-                            className="absolute inset-0 z-0"
-                            style={{
-                                backgroundImage: `
-              linear-gradient(to right, var(--theme-grid-color) 1px, transparent 1px),
-              linear-gradient(to bottom, var(--theme-grid-color) 1px, transparent 1px)
-            `,
-                                backgroundSize: '32px 32px',
-                                backgroundPosition: '0 0',
-                            }}
-                        />
-                        <main className="container mx-auto">{children}</main>
+
+                        <main className="container relative mx-auto max-w-7xl">
+                            {/* Grid overlay */}
+                            <div
+                                className="absolute inset-0 z-0"
+                                style={{
+                                    backgroundImage: `
+                                linear-gradient(to right, var(--theme-grid-color) 1px, transparent 1px),
+                                linear-gradient(to bottom, var(--theme-grid-color) 1px, transparent 1px)
+                                `,
+                                    backgroundSize: '32px 32px',
+                                    backgroundPosition: '0 0',
+                                }}
+                            />
+                            {children}
+                        </main>
                     </div>
 
                     <footer className="container mx-auto py-4">
