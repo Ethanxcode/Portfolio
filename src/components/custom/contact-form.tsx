@@ -24,7 +24,9 @@ const formSchema = z.object({
     email: z.string().email({ message: 'Please enter a valid email address.' }),
     phoneNumber: z
         .string()
-        .regex(/^[0-9+\-\s()]*$/, { message: 'Please enter a valid phone number format.' })
+        .regex(/^[0-9+\-\s()]*$/, {
+            message: 'Please enter a valid phone number format.',
+        })
         .min(10, { message: 'Phone number must be at least 10 digits.' })
         .max(15, { message: 'Phone number cannot exceed 15 digits.' })
         .optional(),
