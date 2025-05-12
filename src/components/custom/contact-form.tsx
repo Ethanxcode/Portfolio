@@ -24,8 +24,10 @@ const formSchema = z.object({
     email: z.string().email({ message: 'Please enter a valid email address.' }),
     phoneNumber: z
         .string()
-        .min(10, { message: 'Please enter a valid phone number.' }),
-    budget: z.string().min(1, { message: 'Please enter your budget.' }),
+        .regex(/^[0-9+\-\s()]*$/, { message: 'Please enter a valid phone number format.' })
+        .min(10, { message: 'Phone number must be at least 10 digits.' })
+        .max(15, { message: 'Phone number cannot exceed 15 digits.' })
+        .optional(),
     message: z
         .string()
         .min(10, { message: 'Message must be at least 10 characters.' }),
@@ -41,13 +43,12 @@ export default function ContactForm() {
             name: '',
             email: '',
             phoneNumber: '',
-            budget: '',
             message: '',
         },
     });
 
     function onSubmit(values: z.infer<typeof formSchema>) {
-        const { name, email, phoneNumber, budget, message } = values;
+        const { name, email, phoneNumber, message } = values;
 
         const formattedMessage = `
         📩 *New Contact Information* 📩
@@ -55,7 +56,6 @@ export default function ContactForm() {
         👤 *Name:* ${name || 'N/A'}
         📧 *Email:* ${email || 'N/A'}
         📞 *Phone Number:* ${phoneNumber || 'N/A'}
-        💰 *Budget:* ${budget || 'N/A'}
         📝 *Message:* ${message || 'N/A'}
         
         🚀 *Sent from the portfolio!*`;
@@ -149,22 +149,6 @@ export default function ContactForm() {
                                     <FormControl>
                                         <Input
                                             placeholder="+1 (555) 000-0000"
-                                            {...field}
-                                        />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="budget"
-                            render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>Budget</FormLabel>
-                                    <FormControl>
-                                        <Input
-                                            placeholder="$1,000 - $5,000"
                                             {...field}
                                         />
                                     </FormControl>

@@ -37,7 +37,7 @@ export default function Home() {
             <Separator />
             <ContactForm />
             <Separator />
-            <MatrixLoader />
+            {/* <MatrixLoader /> */}
             {/* <Card mode={0}>
                 <CanvasPlatformer />
             </Card> */}

@@ -1,21 +1,24 @@
 [
     {
-        "title": "FPT Polytechnic hands-on workshop",
-        "description": "A web application to manage students and activities in a workshop setting. Successfully managed ~10,000 registered students and more than 477 projects.",
-        "type": "Associated with FPT Polytechnic College Project",
-        "imageUrl": "/assets/images/Xuongthuchanh.webp",
+        "title": "Golden Lor - Retail Management System",
+        "description": "Implemented user interfaces, ensuring seamless API integration with the backend team. Optimized source code for better performance and scalability. Applied debounce and throttle and more techniques to optimize interactive application performance\nDeveloped and managed interface logic for handling resources, food items, and store data, ensuring efficient system operations.\nEnsured timely product delivery, meeting project deadlines and delivering a fully functional system to customers on schedule.\nSuccessfully contributed to stable and scalable web applications, maintaining high performance and user-friendly experiences.\nDelivered products on time, aligning with project schedules and customer expectations.",
+        "type": "Freelance Project",
+        "imageUrl": "/assets/images/golden.cyber-nerds.site_.webp",
         "githubUrl": "",
-        "demoUrl": "https://xuongthuchanh.poly.edu.vn/",
+        "demoUrl": "https://golden.cyber-nerds.site/",
         "skills": [
             "TypeScript",
             "ReactJs",
+            "NestJs",
+            "Vercel",
             "REST APIs",
-            "Redux Tookit",
-            "Tailwind CSs",
-            "RTK Query",
-            "Fomik",
-            "Figma",
-            "Trello"
+            "Socket.io",
+            "MongoDB",
+            "I18n",
+            "Axios",
+            "DaisyUI",
+            "Cloudinary",
+            "Stripe"
         ]
     },
     {
@@ -44,7 +47,7 @@
         "description": "A web application to help users to manage their contract, information. A collaboration project with 5 other students for Component-based Software Engineering course. The project is built using Nestjs for the backend and NextJS for the frontend.",
         "type": "Bachelor's Degree Final Year Project",
         "imageUrl": "/assets/images/BlockSign.webp",
-        "githubUrl": "https://github.com/Ethanxcode/Block-Sign",
+        "githubUrl": "",
         "demoUrl": "https://block-sign.vercel.app/vi",
         "skills": [
             "Nextjs",
@@ -67,7 +70,7 @@
     },
     {
         "title": "Perry Toc Chien – A Seamless Dual Booking Platform",
-        "description": "Achieved a Real Experience Score (RES) of 95 on Google PageSpeed Insights, ensuring fast load times and seamless interactions for optimal user experience.\nOptimized page performance with a First Contentful Paint (FCP) of 2.18s, Largest Contentful Paint (LCP) of 2.43s, and Cumulative Layout Shift (CLS) of 0.04, providing a smooth and stable loading experience.\nImplemented SEO best practices, enhancing site visibility by optimizing key pages for fast indexing and improving search engine rankings.",
+        "description": "Successfully integrated Sepay for seamless online transactions, enhancing user experience and security.\nAchieved a Real Experience Score (RES) of 100 on Google PageSpeed Insights, ensuring fast and smooth interactions.\nImplemented SEO best practices for faster indexing and improved search rankings.\nMaintained a highly optimized and SEO-friendly platform, boosting search visibility and organic reach.\nEnsured seamless payment transactions through Sepay, improving checkout flow and user trust.",
         "type": "Freelance Project",
         "imageUrl": "/assets/images/www.perrytocchien.vn_.webp",
         "demoUrl": "https://www.perrytocchien.vn/",
@@ -92,8 +95,8 @@
     },
     {
         "title": "Lexai - The AI-powered language translation tool",
-        "description": "Built with Next.js, Tailwind CSS, and Framer Motion, integrating OpenRouter (upgraded from OpenAI) for advanced AI capabilities. Lexai offers: Natural AI Translation – Smooth and accurate meaning delivery, grammar Analysis – Understand sentence structure effectively, Cultural Adaptation – Ensures contextually appropriate translations.",
-        "type": "Build in public",
+        "description": "Natural AI Translation – Ensuring smooth and accurate meaning delivery.\nGrammar Analysis – Understanding sentence structure effectively.\nCultural Adaptation – Providing contextually appropriate translations for different languages.\nRoles & Responsibilities\nFull-Stack Development: Engineered a scalable, ensuring optimal AI integration.\nAchievements\nTrusted by 300+ users, with real-time monitoring and optimization based on analytics insights.",
+        "type": "Freelance Project",
         "imageUrl": "/assets/images/lexai.webp",
         "demoUrl": "https://lexai.cyber-nerds.site/",
         "skills": [

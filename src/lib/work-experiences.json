@@ -1,15 +1,41 @@
 [
     {
-        "position": "Front-end Developer (Part-time)",
+        "position": "Full-stack Developer",
+        "company": "TIEN PHONG CDS JOINT STOCK COMPANY",
+        "duration": "Oct 2024 - Present",
+        "responsibilities": [
+            "AI-Code: A newly developed R&D-driven product where I played a key role in backend module development. Designed a scalable system architecture, modularization, optimized APIs, integrated AWS services (Bedrock, S3,...), implemented Data-Loader to minimize N+1 queries, integrated SSO (Facebook, X, Google), and developed a hybrid GraphQL & RESTful API solution for flexibility and performance.",
+            "Vietnam Food Map: Successfully launched on the AI-Code platform, leveraging its new architecture. Led backend development, focusing on API efficiency.",
+            "Roles & Responsibilities: Led the development of core backend modules, ensuring efficient AI integration and real-time data processing. Designed and optimized API infrastructure, deployed modular components, and enhanced system performance for scalability and efficiency.",
+            "Achievements: Successfully launched Vietnam Food Map based on the AI-Code architecture. Recognized for technical excellence. Recommended for salary negotiations twice a year due to contributions.",
+            "Demo: vietnamfoodmap.com.vn"
+        ],
+        "skills": [
+            "PHP",
+            "Nextjs",
+            "Aws",
+            "GraphQL",
+            "Lumen mirco framework/Laravel",
+            "Docker",
+            "Redis",
+            "RabbitMQ",
+            "Kafka",
+            "Design Patterns (Singleton, Factory, ...)"
+        ]
+    },
+    {
+        "position": "Front-end Developer",
         "company": "FPT Polytechnic College",
         "duration": "Aug 2023 - Feb 2024",
         "responsibilities": [
-            "Led front-end development using React, Next.js, and Redux, optimized the performance for 239 projects in the system, helping to handle a large amount of user traffic with smooth experience.",
-            "Collaborated with cross-functional teams to ensure timely delivery and high-quality results.",
-            "Involved in 153 ongoing projects, providing consistent support for front-end development, optimizing performance, and collaborating with cross-functional teams to ensure timely delivery and high-quality results."
+            "Built user interface, connected APIs from the Back-end team, optimized source code, and improved website performance.",
+            "Handled interface design and logic implementation for various website functions.",
+            "Applied debounce and throttle, ...etc techniques to optimize interactive application performance.",
+            "Roles & Responsibilities: Developed and optimized React, Next.js, and Redux-based applications, improving system responsiveness and efficiency. Collaborated with cross-functional teams, ensuring timely delivery and high-quality product outcomes.",
+            "Achievements: Contributed to stable and high-performing web applications, supporting thousands of users.",
+            "Demo: xuongthuchanh.poly.edu.vn"
         ],
         "skills": [
-            "REST APIs",
             "TypeScript",
             "React",
             "Tailwind CSS",
@@ -18,7 +44,6 @@
             "JWT",
             "NestJs",
             "MongoDB",
-            "Docker",
             "I18n",
             "Zod",
             "React Query",
@@ -27,68 +52,26 @@
         ]
     },
     {
-        "position": "Full-stack Developer (Full-time)",
-        "company": "Bytez Team",
-        "duration": "August 2024 - Dec 2024",
-        "responsibilities": [
-            "Contributed to Bytez Pro and Cloudify projects, optimizing the website's performance and user interface. Led the development of API integrations, improving overall team performance and enhancing user experience."
-        ],
-        "skills": [
-            "REST APIs",
-            "TypeScript",
-            "Nextjs",
-            "MySQL",
-            "PostgreSQL",
-            "Ruby on Rails",
-            "Packaging Design",
-            "Figma",
-            "Ant design",
-            "Postman API",
-            "Design Patterns",
-            "Strapi",
-            "MongoDb",
-            "Supabase",
-            "PrismaDb",
-            "Firebase",
-            "Cloudinary"
-        ]
-    },
-    {
-        "position": "Back-end Developer (Full-time)",
+        "position": "Back-end Developer",
         "company": "TIEN PHONG CDS JOINT STOCK COMPANY",
-        "duration": "December 2023 - Present",
+        "duration": "Dec 2023 - June 2024",
         "responsibilities": [
-            "Career Progression: Started as an Intern Back-end Developer, progressing to Full Stack Developer in the R&D team. Took on more responsibilities in system optimization and product development.",
-            "Project Contributions: Contributed to various outsourcing and internal product projects, improving system functionality and performance. Key projects include:",
-            "Vietnam Food Map: Led backend development and API optimization, collaborating with the team to build the backend system. Integrated AI through AWS, and implemented GraphQL and RESTful APIs for seamless data handling and improved performance.",
-            "Trung Nguyen International – King Coffee & Appnoithat & FlyFood: Collaborated with the team to optimize APIs, fix bugs, and add new APIs for better system performance.",
-            "Developed the Vincss Single Sign-On module for enhanced user security.",
-            "Key Responsibilities: System Optimization: Refactored and optimized legacy systems to improve performance, stability, SEO, and user experience.",
-            "Product Development: Contributed to backend architecture and development of new product features, ensuring seamless integration with other systems."
+            "King Coffee, Appnoithat, Eproshop: Contributed 60%+ to API maintenance, system optimization, and bug fixes to enhance performance and stability. Focused on refactoring legacy code, reducing API response times, and improving error handling.",
+            "FlyFood: Developed new APIs to enhance system functionality, ensuring seamless data processing and integration. Improve API efficiency.",
+            "Vincss Single Sign-On: Developed a secure authentication module with OAuth2 & JWT for improved user security and session management (Packagist).",
+            "Demo: flyfood.vn, us.kingcoffee.com, appnoithat.com, eproshop.vn"
         ],
         "skills": [
-            "Full Stack Development",
             "PHP",
             "Nextjs",
-            "Aws",
             "REST APIs",
-            "GraphQL",
-            "Laravel",
             "Docker",
             "Redis",
-            "Kafka",
-            "Vercel",
             "Webhook",
             "Git",
-            "Lumen mirco framework",
+            "Lumen mirco framework/Laravel",
             "MySQL",
-            "PostgreSQL",
-            "Ruby on Rail",
-            "Packaging Design",
-            "Figma",
-            "Ant design",
-            "Postman API",
-            "Design Patterns"
+            "PostgreSQL"
         ]
     }
 ]
